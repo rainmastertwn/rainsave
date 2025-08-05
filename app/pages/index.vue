@@ -1,5 +1,15 @@
 <script lang="ts" setup></script>
 
-<template>index page init</template>
+<template>
+  <div class="height-space">index page</div>
+</template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.height-space {
+  // border: 2px solid red;
+  height: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>

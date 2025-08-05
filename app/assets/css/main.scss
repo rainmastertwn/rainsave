@@ -1,0 +1,15 @@
+.sidebar {
+  &_header {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -12px;
+      width: 2.5px;
+      height: 95%;
+      background-color: #555;
+      transform: translateY(-50%);
+    }
+  }
+}

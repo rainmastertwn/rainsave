@@ -60,7 +60,7 @@ useHead({
     },
     {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap'
+      href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap'
     }
   ]
 })
@@ -74,15 +74,21 @@ useHead({
 </template>
 
 <style lang="scss">
-@import '~/assets/css/main.scss';
+@use '~/assets/css/main.scss';
 
 html,
 body {
   color: #555;
   background-color: white;
   font-size: 16px;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+// set mobile/pad can not swipe to left / right
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 </style>

@@ -2,31 +2,28 @@
 
 <template>
   <header class="sticky top-0 z-[1000] bg-white">
-    <div class="container flex items-center justify-between py-4">
+    <div class="container flex items-center justify-between py-6">
       <div class="flex items-center">
         <img
-          class="h-[65px] w-[65px]"
+          class="h-[50px] w-[50px] lg:h-[65px] lg:w-[65px]"
           src="~/assets/images/rainsave-cube@blue.svg"
-          alt=""
-          srcset=""
         />
-        <div class="ml-4 flex flex-col">
-          <h3 class="mb-1 text-3xl font-bold">RainSave 儲集框架</h3>
-          <!-- <img class="w-[200px]" src="~/assets/images/zhengzaiwang@logo.png" alt="" srcset="" /> -->
+        <div class="ml-2 flex flex-row items-center lg:ml-4">
+          <h3 class="text-2xl font-semibold uppercase lg:text-3xl xl:text-4xl">
+            Rain Save 儲集框架
+          </h3>
+          <img
+            class="mb-1 ml-2 hidden w-[25px] lg:ml-4 lg:block lg:w-[40px]"
+            src="~/assets/images/yuanbao@logo.png"
+          />
         </div>
       </div>
-
-      <!-- <div class="sidebar_header flex flex-col items-start">
-        <p class="mb-1 text-xs">地址：台北市北投區清江路247巷8號1樓</p>
-        <p class="mb-1 text-xs">電話：(02)2898-6776 / 傳真：(02)2898-6132</p>
-        <p class="text-xs">E-mail：RS@rainsave.com.tw</p>
-      </div> -->
     </div>
   </header>
 </template>
 
 <style lang="scss" scoped>
 header {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 }
 </style>

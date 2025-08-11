@@ -6,9 +6,13 @@ export default defineNuxtConfig({
     // baseURL: '/test/' // if you want to set a base URL for your application
   },
   devtools: { enabled: true },
-  modules: ['@nuxt/image'],
-  css: ['~/assets/css/tailwind.css'],
   vite: {
     plugins: [tailwindcss()]
+  },
+  modules: ['@nuxt/image', '@element-plus/nuxt'],
+  css: ['~/assets/css/tailwind.css'],
+  elementPlus: {
+    /** Options setting */
+    importStyle: 'scss'
   }
 })

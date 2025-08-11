@@ -8,7 +8,16 @@
   --breakpoint-xxl: 1440px;
 }
 
+/* max-sm	@media (width < 40rem)
+  max-md	@media (width < 48rem)
+  max-lg	@media (width < 64rem)
+  max-xl	@media (width < 80rem)
+  max-2xl	@media (width < 96rem) */
 @utility container {
   margin-inline: auto;
   padding-inline: 2rem;
+
+  @media (width < 48rem) {
+    padding-inline: 1rem;
+  }
 }

@@ -1,7 +1,8 @@
 .sidebar {
   &_header {
     position: relative;
-    &:before {
+
+    &::before {
       content: '';
       position: absolute;
       top: 50%;

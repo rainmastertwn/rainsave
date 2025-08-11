@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import Header from './layout/header.vue'
+import Footer from './layout/footer.vue'
+
 useHead({
   title: 'Rain SAVE 儲集框架 雨水積磚',
   meta: [
@@ -70,25 +72,25 @@ useHead({
   <div>
     <Header />
     <NuxtPage />
+    <Footer />
   </div>
 </template>
 
 <style lang="scss">
-@use '~/assets/css/main.scss';
+@use '~/assets/css/main';
 
 html,
 body {
-  color: #555;
-  background-color: white;
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
+  color: #555;
+  background-color: white;
 }
 
 // set mobile/pad can not swipe to left / right
 body {
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden scroll;
 }
 </style>

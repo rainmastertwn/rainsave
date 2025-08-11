@@ -10,8 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@element-plus/nuxt": "^1.1.4",
     "@nuxt/image": "npm:@nuxt/image-nightly@latest",
     "@tailwindcss/vite": "^4.1.11",
+    "element-plus": "^2.10.6",
     "nuxt": "^4.0.2",
     "sass": "^1.89.2",
     "tailwindcss": "^4.1.11",
@@ -20,10 +22,15 @@
   },
   "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748",
   "devDependencies": {
-    "@element-plus/nuxt": "^1.1.4",
-    "element-plus": "^2.10.6",
+    "postcss": "^8.5.6",
+    "postcss-html": "^1.8.0",
+    "postcss-scss": "^4.0.9",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
-    "prettier-plugin-vue": "^1.1.6"
+    "prettier-plugin-vue": "^1.1.6",
+    "stylelint": "^16.23.1",
+    "stylelint-config-recommended-vue": "^1.6.1",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-order": "^7.0.0"
   }
 }

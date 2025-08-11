@@ -1,0 +1,134 @@
+<script lang="ts" setup>
+const props = defineProps({
+  mobileMenuStatus: Boolean
+})
+const emit = defineEmits<{
+  (e: 'toggleBurger'): void
+}>()
+
+const toggleBurger = (): void => {
+  emit('toggleBurger')
+}
+</script>
+
+<template>
+  <div class="menu-wrap" :class="{ 'menu-opened': mobileMenuStatus }">
+    <nav class="menu hidden items-center lg:flex">
+      <NuxtLink href="#" class="text-base lg:text-lg xl:text-xl">產品說明</NuxtLink>
+      <NuxtLink href="#" class="text-base lg:text-lg xl:text-xl">使用需知</NuxtLink>
+      <NuxtLink href="#" class="text-base lg:text-lg xl:text-xl">需求造價與資源下載</NuxtLink>
+      <NuxtLink href="#" class="text-base lg:text-lg xl:text-xl">工程實績</NuxtLink>
+      <NuxtLink href="#" class="text-base lg:text-lg xl:text-xl">影音頻道</NuxtLink>
+    </nav>
+    <nav class="mobile-menu flex lg:hidden">
+      <div class="burger-container" @click="toggleBurger">
+        <div id="burger">
+          <div class="bar topBar"></div>
+          <div class="bar btmBar"></div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+$header-margin: 32px;
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+
+.menu {
+  a {
+    position: relative;
+    display: flex;
+    transition: all 0.3s;
+    line-height: 1;
+
+    &:hover {
+      color: var(--default-blue-color);
+    }
+
+    &:not(:last-child) {
+      margin-right: $header-margin;
+
+      @media (width < 80rem) {
+        margin-right: 16px;
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        right: calc(-#{$header-margin} / 2);
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: #000;
+        content: '';
+
+        @media (width < 80rem) {
+          right: -8px;
+        }
+      }
+    }
+  }
+}
+
+.menu-wrap {
+  .burger-container {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s $cubic;
+    cursor: pointer;
+    transform: rotate(0deg);
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
+    #burger {
+      position: relative;
+      top: 50%;
+      display: block;
+      margin: -4px auto 0;
+      width: 18px;
+      height: 8px;
+
+      .bar {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        transition: all 0.3s $cubic;
+        transition-delay: 0s;
+
+        &.topBar {
+          transform: translateY(0) rotate(0deg);
+        }
+
+        &.btmBar {
+          transform: translateY(6px) rotate(0deg);
+        }
+      }
+    }
+  }
+
+  &.menu-opened {
+    .burger-container {
+      transform: rotate(90deg);
+
+      #burger {
+        .bar {
+          transition: all 0.4s $cubic;
+          transition-delay: 0.2s;
+
+          &.topBar {
+            transform: translateY(6.5px) rotate(45deg);
+          }
+
+          &.btmBar {
+            transform: translateY(4.5px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+</style>

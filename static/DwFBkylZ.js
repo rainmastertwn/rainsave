@@ -1,1 +1,0 @@
-import{_ as e,c,o as t}from"./CfiJXBV0.js";const a={},o={class:"height-space"};function s(n,_){return t(),c("div",o,"index page action 123")}const d=e(a,[["render",s],["__scopeId","data-v-3aecc4e7"]]);export{d as default};

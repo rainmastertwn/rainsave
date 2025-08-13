@@ -27,7 +27,7 @@
 .typewriter {
   &::before {
     content: '';
-    animation: typing 2.5s steps(1) 1;
+    animation: typing 1.5s steps(1) 1;
     animation-fill-mode: forwards;
     animation-delay: 1.4s;
   }

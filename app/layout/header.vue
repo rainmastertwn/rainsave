@@ -8,7 +8,7 @@ const toggleMenu = (): void => {
 </script>
 
 <template>
-  <header class="sticky top-0 z-[1000] bg-white">
+  <header class="bg-white-set sticky top-0 z-[1000]">
     <div class="container flex items-center justify-between py-4 lg:py-6">
       <div class="flex items-center">
         <img

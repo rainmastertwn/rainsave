@@ -5,9 +5,7 @@ import Header from './layout/header.vue'
 import Footer from './layout/footer.vue'
 
 onMounted(() => {
-  AOS.init({
-    once: true // whether animation should happen only once - while scrolling down
-  })
+  AOS.init()
 })
 
 useHead({
@@ -94,7 +92,7 @@ body {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   color: #555;
-  background-color: white;
+  background-color: var(--color-white-set);
 }
 
 // set mobile/pad can not swipe to left / right

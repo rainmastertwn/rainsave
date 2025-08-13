@@ -9,6 +9,7 @@
 
   --color-primary: #006aa8;
   --color-default-blue: #193b8b;
+  --color-white-set: #fbfbfb;
 }
 
 /* 
@@ -29,6 +30,6 @@
   padding-inline: 1rem;
 
   @media (width < 48rem) {
-    padding-inline: 0.5rem;
+    padding-inline: 1rem;
   }
 }

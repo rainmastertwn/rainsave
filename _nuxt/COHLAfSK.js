@@ -1,1 +1,0 @@
-import{_ as e,c,o as s}from"./CCeyDUEk.js";const t={},o={class:"height-space"};function a(n,_){return s(),c("div",o,"index page")}const d=e(t,[["render",a],["__scopeId","data-v-4e9590d8"]]);export{d as default};

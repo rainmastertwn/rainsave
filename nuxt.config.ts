@@ -4,7 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   app: {
     // baseURL: '/test/' // if you want to set a base URL for your application
-    baseURL: '/rainsave/' //  github page deploy setting
+    baseURL: '/rainsave/', //  github page deploy setting
+    buildAssetsDir: '/static/'
   },
   devtools: { enabled: true },
   vite: {

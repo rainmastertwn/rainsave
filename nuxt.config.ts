@@ -3,8 +3,8 @@ import tailwindcss from '@tailwindcss/vite'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    // baseURL: '/test/' // if you want to set a base URL for your application
-    baseURL: '/rainsave/', //  github page deploy setting
+    // rain save deploy to github pages
+    baseURL: process.env.NODE_ENV === 'production' ? '/rainsave/' : '/',
     buildAssetsDir: '/static/'
   },
   devtools: { enabled: true },

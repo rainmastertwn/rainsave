@@ -43,7 +43,7 @@ $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
     line-height: 1;
 
     &:hover {
-      color: var(--default-blue-color);
+      color: var(--color-default-blue);
     }
 
     &:not(:last-child) {

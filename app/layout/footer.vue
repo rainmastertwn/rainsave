@@ -3,7 +3,7 @@ const currentYear = ref(new Date().getFullYear())
 </script>
 
 <template>
-  <footer class="bg-(--primary-color) px-[16px] py-[64px] text-white lg:px-0 lg:py-[100px]">
+  <footer class="bg-primary px-[16px] py-[64px] text-white lg:px-0 lg:py-[100px]">
     <div class="container mx-auto mb-14 flex flex-col justify-start lg:flex-row lg:justify-around">
       <nav class="menu mb-10 flex flex-col items-center lg:mb-0 lg:flex-row">
         <NuxtLink href="#" class="mb-4 text-lg lg:mb-0 lg:text-xl">產品說明</NuxtLink>

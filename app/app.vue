@@ -1,6 +1,14 @@
 <script lang="ts" setup>
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import Header from './layout/header.vue'
 import Footer from './layout/footer.vue'
+
+onMounted(() => {
+  AOS.init({
+    once: true // whether animation should happen only once - while scrolling down
+  })
+})
 
 useHead({
   title: 'Rain SAVE 儲集框架 雨水積磚',

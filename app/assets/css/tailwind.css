@@ -7,8 +7,8 @@
   --breakpoint-xl: 1280px;
   --breakpoint-xxl: 1536px;
 
-  --primary-color: #006aa8;
-  --default-blue-color: #193b8b;
+  --color-primary: #006aa8;
+  --color-default-blue: #193b8b;
 }
 
 /* 

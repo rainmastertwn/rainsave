@@ -5,7 +5,9 @@ import Header from './layout/header.vue'
 import Footer from './layout/footer.vue'
 
 onMounted(() => {
-  AOS.init()
+  AOS.init({
+    once: true
+  })
 })
 
 useHead({

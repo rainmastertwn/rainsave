@@ -1,12 +1,12 @@
 <script lang="ts" setup></script>
 
 <template>
-  <section class="container mb-16 grid grid-cols-12 gap-10">
-    <div class="col-span-10 col-start-2 lg:col-span-6 lg:col-start-2">
+  <section class="container mb-16 grid grid-cols-12 gap-0 lg:gap-10">
+    <div class="col-span-12 col-start-1 mb-10 lg:col-span-6 lg:col-start-2 lg:mb-0">
       <img class="w-full" src="~/assets/images/product@main.png" alt="Product Image" srcset="" />
     </div>
     <div
-      class="col-span-10 col-start-2 flex flex-col justify-center pl-5 lg:col-span-4"
+      class="col-span-12 col-start-1 flex flex-col justify-center pl-5 lg:col-span-4"
       data-aos="fade-up"
       data-aos-delay="550"
     >

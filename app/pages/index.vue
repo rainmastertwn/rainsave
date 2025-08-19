@@ -5,7 +5,8 @@ import VideoSection from '~/components/index/videoSection.vue'
 import FeatureSection from '~/components/index/featureSection.vue'
 import AdSection from '~/components/common/adSection.vue'
 import ConstructionSection from '~/components/index/constructionSection.vue'
-import ChooseUs from '~/components/index/chooseUs.vue'
+import CaseStudiesSection from '~/components/index/caseStudiesSection.vue'
+import ChooseUs from '~/components/common/chooseUs.vue'
 import PartnerSection from '~/components/common/partnerSection.vue'
 </script>
 
@@ -28,6 +29,7 @@ import PartnerSection from '~/components/common/partnerSection.vue'
   <ConstructionSection />
 
   <!-- 知識分享區塊 -->
+  <CaseStudiesSection />
 
   <!-- choose us section -->
   <ChooseUs />

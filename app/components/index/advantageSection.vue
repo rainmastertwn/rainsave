@@ -63,25 +63,28 @@ const listLeave = (event: MouseEvent): void => {
           </div>
         </div>
 
-        <img class="w-full" src="~/assets/images/product@main.png" alt="Product Image" srcset="" />
+        <img
+          class="w-full"
+          src="~/assets/images/index/product@main.png"
+          alt="Product Image"
+          srcset=""
+        />
       </div>
     </div>
     <div
-      class="col-span-12 col-start-1 flex flex-col justify-center pl-5 lg:col-span-4"
+      class="col-span-12 col-start-1 flex flex-col justify-center pl-5 lg:col-span-5"
       data-aos="fade-up"
       data-aos-delay="550"
     >
       <!-- <h3 class="mb-4 text-2xl font-bold">雨水積磚 · 儲集框架的五大優點：</h3> -->
       <h3 class="typewriter mb-4 min-h-[35px] text-3xl font-bold"></h3>
-      <ol class="advantage-list ml-6 list-decimal">
+      <ol class="advantage-list w-[85%] md:w-[70%] lg:w-[80%]">
         <li
           class="relative cursor-pointer text-xl"
           data-list="1"
           :class="{
             hover: advantageHoverValue === '1'
           }"
-          @mouseenter="listEnter"
-          @mouseleave="listLeave"
         >
           儲集框架 95%儲水體積。
         </li>
@@ -91,8 +94,6 @@ const listLeave = (event: MouseEvent): void => {
           :class="{
             hover: advantageHoverValue === '2'
           }"
-          @mouseenter="listEnter"
-          @mouseleave="listLeave"
         >
           4cm側板提升水平抗壓能力。
         </li>
@@ -102,8 +103,6 @@ const listLeave = (event: MouseEvent): void => {
           :class="{
             hover: advantageHoverValue === '3'
           }"
-          @mouseenter="listEnter"
-          @mouseleave="listLeave"
         >
           連續性的柱狀支撐結構。
         </li>
@@ -113,8 +112,6 @@ const listLeave = (event: MouseEvent): void => {
           :class="{
             hover: advantageHoverValue === '4'
           }"
-          @mouseenter="listEnter"
-          @mouseleave="listLeave"
         >
           多方向性的組裝方式。
         </li>
@@ -124,8 +121,6 @@ const listLeave = (event: MouseEvent): void => {
           :class="{
             hover: advantageHoverValue === '5'
           }"
-          @mouseenter="listEnter"
-          @mouseleave="listLeave"
         >
           穩固的側板卡扣設計。
         </li>
@@ -277,42 +272,52 @@ const listLeave = (event: MouseEvent): void => {
 }
 
 .advantage-list {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: item;
+
   li {
+    position: relative;
+    display: inline-block;
     padding-left: 8px;
+    margin-right: 15px;
+    counter-increment: item;
 
     &:not(:last-child) {
       margin-bottom: 16px;
     }
 
+    &::before {
+      content: counter(item) '. ';
+      font-weight: 700;
+      color: #333;
+    }
+
     &::after {
       position: absolute;
-      bottom: -4px;
-      left: -20px;
-      width: calc(65%);
-      height: 2px;
+      bottom: 0;
+      left: 4px;
+      width: 100%;
+
+      // height: 2.5px;
+      height: 0;
       background-color: var(--color-primary);
-      transition: transform 0.25s ease-out;
+      opacity: 0.35;
+
+      // transition: transform 0.25s ease-out;
+      transition: all 0.3s ease;
       content: '';
-      transform: scaleX(0);
+
+      // transform: scaleX(0);
 
       // underline position
       transform-origin: bottom center;
-
-      @media (width < 96rem) {
-        width: 80%;
-      }
-
-      @media (width < 80rem) {
-        width: 100%;
-      }
-
-      @media (width < 64rem) {
-        width: 90%;
-      }
     }
 
     &.hover::after {
-      transform: scaleX(1);
+      height: 40%;
+
+      // transform: scaleX(1);
     }
   }
 }

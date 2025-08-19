@@ -18,20 +18,21 @@
       </ol>
       <h3 class="mb-6 text-center text-3xl font-bold">相關企業及產品</h3>
       <div class="flex flex-col md:flex-row items-center justify-center">
-        <a href="#" target="_blank" class="share-link flex items-center mr-6 mb-6 md:mb-0">
-          <img class="mr-4 w-[40px] h-auto" src="~/assets/images/rainline@logo.png"></img>
+        <a href="#" target="_blank" class="share-link mr-10 flex items-center mb-6 md:mb-0">
+          <img class="mr-3 w-[35px] h-auto" src="~/assets/images/coinn@logo.png"></img>
           <div class="flex flex-col text-center">
-            <h3 class="red text-lg font-bold tracking-wider">RAIN LINE PP截水溝</h3>
-            <p class="font-light text-sm leading-none">www.rainline.com.tw</p>
-          </div> 
-        </a>
-        <a href="#" target="_blank" class="share-link flex items-center">
-          <img class="mr-4 w-[35px] h-auto" src="~/assets/images/coinn@logo.png"></img>
-          <div class="flex flex-col text-center">
-            <h3 class="blue text-lg font-bold tracking-wider">意動創新有限公司</h3>
+            <h3 class="blue text-lg font-bold ">意動創新有限公司</h3>
             <p class="font-light text-sm leading-none">www.coinn.com.tw</p>
           </div>
         </a>
+        <a href="#" target="_blank" class="share-link flex items-center  ">
+          <img class="mr-3 w-[40px] h-auto" src="~/assets/images/rainline@logo.png"></img>
+          <div class="flex flex-col text-center">
+            <h3 class="red text-lg font-bold">RAIN LINE PP 截水溝</h3>
+            <p class="font-light text-sm leading-none">www.rainline.com.tw</p>
+          </div> 
+        </a>
+        
       </div>
     </div>
   </section>
@@ -51,7 +52,8 @@ ol {
 .share-link{
   &:hover {
     h3::after {
-      transform: scaleX(1);
+      // transform: scaleX(1);
+      height: 40%;
     }
   }
 
@@ -63,10 +65,14 @@ ol {
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 2px;
-      transition: transform 0.25s ease-out;
+      height: 0;
+      opacity: 0.35;
+      transition: all .3s ease;
+
+      // transition: transform 0.25s ease-out;
       content: '';
-      transform: scaleX(0);
+
+      // transform: scaleX(0);
 
       // underline position
       transform-origin: bottom center;

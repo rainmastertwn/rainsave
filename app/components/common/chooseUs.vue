@@ -4,7 +4,14 @@
   <section class="container mb-16 grid grid-cols-12">
     <div class="col-span-12 lg:col-span-5 lg:col-start-2 mr-0 mb-8 lg:mb-0 lg:mr-6">
       <div class="rounded-md overflow-hidden">
-        <img class="w-full" src="~/assets/images/whyChooseUs.png" alt="" srcset="" />
+        <NuxtImg
+          class="w-full"
+          src="whyChooseUs.png"
+          alt=""
+          srcset=""
+          loading="lazy"
+          format="webp"
+        />
       </div>
     </div>
     <div class="col-span-12 lg:col-span-5 lg:col-start-7 ml-0 lg:ml-6">
@@ -18,21 +25,25 @@
       </ol>
       <h3 class="mb-6 text-center text-3xl font-bold">相關企業及產品</h3>
       <div class="flex flex-col md:flex-row items-center justify-center">
-        <a href="#" target="_blank" class="share-link mr-10 flex items-center mb-6 md:mb-0">
-          <img class="mr-3 w-[35px] h-auto" src="~/assets/images/coinn@logo.png"></img>
+        <a class="share-link mr-10 flex items-center mb-6 md:mb-0" href="#" target="_blank">
+          <NuxtImg class="mr-3 w-[35px] h-auto" src="coinn@logo.png" loading="lazy" format="webp" />
           <div class="flex flex-col text-center">
-            <h3 class="blue text-lg font-bold ">意動創新有限公司</h3>
+            <h3 class="blue text-lg font-bold">意動創新有限公司</h3>
             <p class="font-light text-sm leading-none">www.coinn.com.tw</p>
           </div>
         </a>
-        <a href="#" target="_blank" class="share-link flex items-center  ">
-          <img class="mr-3 w-[40px] h-auto" src="~/assets/images/rainline@logo.png"></img>
+        <a class="share-link flex items-center" href="#" target="_blank">
+          <NuxtImg
+            class="mr-3 w-[40px] h-auto"
+            src="rainline@logo.png"
+            loading="lazy"
+            format="webp"
+          />
           <div class="flex flex-col text-center">
             <h3 class="red text-lg font-bold">RAIN LINE PP 截水溝</h3>
             <p class="font-light text-sm leading-none">www.rainline.com.tw</p>
-          </div> 
+          </div>
         </a>
-        
       </div>
     </div>
   </section>
@@ -49,7 +60,7 @@ ol {
   }
 }
 
-.share-link{
+.share-link {
   &:hover {
     h3::after {
       // transform: scaleX(1);
@@ -67,7 +78,7 @@ ol {
       width: 100%;
       height: 0;
       opacity: 0.35;
-      transition: all .3s ease;
+      transition: all 0.3s ease;
 
       // transition: transform 0.25s ease-out;
       content: '';
@@ -86,7 +97,5 @@ ol {
       background-color: #193b8b;
     }
   }
-
-  
 }
 </style>

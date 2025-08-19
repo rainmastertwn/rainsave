@@ -30,22 +30,22 @@ onMounted(() => {
         rel: 0,
         showinfo: 0,
         controls: 0,
-        // disablekb: 1,
-        enablejsapi: 0
-        // iv_load_policy: 3
+        disablekb: 1,
+        enablejsapi: 0,
+        iv_load_policy: 3
       },
       events: {
         onReady: (event: any) => {
-          console.log('YouTube Player Ready')
-          console.log(player.value)
+          // console.log('YouTube Player Ready')
+          // console.log(player.value)
           player.value.mute()
           player.value.playVideo()
           // player.value.seekTo(0)()
         },
         onStateChange: (event: any) => {
-          console.log('State Changed:', event.data)
+          // console.log('State Changed:', event.data)
           if (event.data === 0) {
-            console.log('Video ended')
+            // console.log('Video ended')
             // player.value.pauseVideo()
             player.value.seekTo(0)()
           }

@@ -13,6 +13,9 @@ export default defineNuxtConfig({
   },
   modules: ['@nuxt/image', '@element-plus/nuxt'],
   css: ['~/assets/css/tailwind.css'],
+  image: {
+    dir: 'assets/images'
+  },
   elementPlus: {
     /** Options setting */
     importStyle: 'scss'

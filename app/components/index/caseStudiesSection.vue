@@ -13,41 +13,48 @@ const toggleDialog = () => {
       <h3 class="mb-6 text-center text-2xl font-bold">雨水積磚 工程實績</h3>
       <div class="case-wrap grid grid-cols-2 gap-4">
         <div class="case relative overflow-hidden rounded-md">
-          <img
+          <NuxtImg
             class="z-0 w-full h-full object-cover"
-            src="~/assets/images/index/case-1.jpeg"
+            src="index/case-1.jpeg"
             alt=""
             srcset=""
+            loading="lazy"
           />
           <div class="cover"></div>
           <h4 class="z-1 text-white text-2xl font-bold">士林北藝中心</h4>
         </div>
         <div class="case relative overflow-hidden rounded-md">
-          <img
+          <NuxtImg
             class="z-0 w-full h-full object-cover"
-            src="~/assets/images/index/case-2.jpeg"
+            src="index/case-2.jpeg"
             alt=""
             srcset=""
+            loading="lazy"
+            format="webp"
           />
           <div class="cover"></div>
           <h4 class="z-1 text-white text-2xl font-bold">北市日新國小</h4>
         </div>
         <div class="case relative overflow-hidden rounded-md">
-          <img
+          <NuxtImg
             class="z-0 w-full h-full object-cover"
-            src="~/assets/images/index/case-3.jpg"
+            src="index/case-3.jpg"
             alt=""
             srcset=""
+            loading="lazy"
+            format="webp"
           />
           <div class="cover"></div>
           <h4 class="z-1 text-white text-2xl font-bold">經濟部金屬中心</h4>
         </div>
         <div class="case relative overflow-hidden rounded-md">
-          <img
+          <NuxtImg
             class="z-0 w-full h-full object-cover"
-            src="~/assets/images/index/case-4.jpeg"
+            src="index/case-4.jpeg"
             alt=""
             srcset=""
+            loading="lazy"
+            format="webp"
           />
           <div class="cover"></div>
           <h4 class="z-1 text-white text-2xl font-bold">龜山市地重劃</h4>

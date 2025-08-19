@@ -6,7 +6,14 @@
       class="col-span-12 md:mr-0 lg:mr-6 2xl:mr-0 lg:col-span-7 flex items-center justify-center"
     >
       <div class="overflow-hidden rounded-md mb-8 lg:mb-0">
-        <img class="w-full" src="~/assets/images/index/feature.png" alt="" srcset="" />
+        <NuxtImg
+          class="w-full"
+          src="index/feature.png"
+          alt=""
+          srcset=""
+          loading="lazy"
+          format="webp"
+        />
       </div>
     </div>
     <div class="col-span-12 lg:col-span-5">

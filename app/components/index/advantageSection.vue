@@ -1,9 +1,70 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const advantageHoverValue = ref<string>('')
+const listEnter = (event: MouseEvent): void => {
+  const target = event.currentTarget as HTMLElement
+  const dataNum = target.dataset.list
+  advantageHoverValue.value = dataNum ? dataNum : ''
+}
+
+const listLeave = (event: MouseEvent): void => {
+  advantageHoverValue.value = ''
+}
+</script>
 
 <template>
   <section class="container mb-16 grid grid-cols-12 gap-0 lg:gap-10">
     <div class="col-span-12 col-start-1 mb-10 lg:col-span-6 lg:col-start-2 lg:mb-0">
-      <img class="w-full" src="~/assets/images/product@main.png" alt="Product Image" srcset="" />
+      <div class="hover-wrap relative">
+        <div class="circle-list">
+          <div
+            class="circle"
+            data-list="1"
+            :class="{ hover: advantageHoverValue === '1' }"
+            @mouseenter="listEnter"
+            @mouseleave="listLeave"
+          >
+            1
+          </div>
+          <div
+            class="circle"
+            data-list="2"
+            :class="{ hover: advantageHoverValue === '2' }"
+            @mouseenter="listEnter"
+            @mouseleave="listLeave"
+          >
+            2
+          </div>
+          <div
+            class="circle"
+            data-list="3"
+            :class="{ hover: advantageHoverValue === '3' }"
+            @mouseenter="listEnter"
+            @mouseleave="listLeave"
+          >
+            3
+          </div>
+          <div
+            class="circle"
+            data-list="4"
+            :class="{ hover: advantageHoverValue === '4' }"
+            @mouseenter="listEnter"
+            @mouseleave="listLeave"
+          >
+            4
+          </div>
+          <div
+            class="circle"
+            data-list="5"
+            :class="{ hover: advantageHoverValue === '5' }"
+            @mouseenter="listEnter"
+            @mouseleave="listLeave"
+          >
+            5
+          </div>
+        </div>
+
+        <img class="w-full" src="~/assets/images/product@main.png" alt="Product Image" srcset="" />
+      </div>
     </div>
     <div
       class="col-span-12 col-start-1 flex flex-col justify-center pl-5 lg:col-span-4"
@@ -11,19 +72,129 @@
       data-aos-delay="550"
     >
       <!-- <h3 class="mb-4 text-2xl font-bold">雨水積磚 · 儲集框架的五大優點：</h3> -->
-      <h3 class="typewriter mb-4 min-h-[32px] text-2xl font-bold"></h3>
-      <ol class="advantage-list ml-5 list-decimal">
-        <li class="pl-2 text-xl">儲集框架 95%儲水體積。</li>
-        <li class="pl-2 text-xl">4cm側板提升水平抗壓能力。</li>
-        <li class="pl-2 text-xl">連續性的柱狀支撐結構。</li>
-        <li class="pl-2 text-xl">多方向性的組裝方式。</li>
-        <li class="pl-2 text-xl">穩固的側板卡扣設計。</li>
+      <h3 class="typewriter mb-4 min-h-[35px] text-3xl font-bold"></h3>
+      <ol class="advantage-list ml-6 list-decimal">
+        <li
+          class="relative cursor-pointer text-xl"
+          data-list="1"
+          :class="{
+            hover: advantageHoverValue === '1'
+          }"
+          @mouseenter="listEnter"
+          @mouseleave="listLeave"
+        >
+          儲集框架 95%儲水體積。
+        </li>
+        <li
+          class="relative cursor-pointer text-xl"
+          data-list="2"
+          :class="{
+            hover: advantageHoverValue === '2'
+          }"
+          @mouseenter="listEnter"
+          @mouseleave="listLeave"
+        >
+          4cm側板提升水平抗壓能力。
+        </li>
+        <li
+          class="relative cursor-pointer text-xl"
+          data-list="3"
+          :class="{
+            hover: advantageHoverValue === '3'
+          }"
+          @mouseenter="listEnter"
+          @mouseleave="listLeave"
+        >
+          連續性的柱狀支撐結構。
+        </li>
+        <li
+          class="relative cursor-pointer text-xl"
+          data-list="4"
+          :class="{
+            hover: advantageHoverValue === '4'
+          }"
+          @mouseenter="listEnter"
+          @mouseleave="listLeave"
+        >
+          多方向性的組裝方式。
+        </li>
+        <li
+          class="relative cursor-pointer text-xl"
+          data-list="5"
+          :class="{
+            hover: advantageHoverValue === '5'
+          }"
+          @mouseenter="listEnter"
+          @mouseleave="listLeave"
+        >
+          穩固的側板卡扣設計。
+        </li>
       </ol>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
+.hover-wrap {
+  .circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    background-color: rgb(0, 106, 168, 0.75);
+    border: 2px solid transparent;
+    border-radius: 100%;
+    transition: all 0.3s ease-in-out;
+
+    @media (width < 48rem) {
+      width: 30px;
+      height: 30px;
+    }
+
+    &.hover {
+      transform: scale(1.25);
+      background-color: rgb(0, 106, 168, 1);
+      border: 2px solid #fff;
+    }
+
+    &[data-list='1'] {
+      top: 20%;
+      left: 50%;
+      animation: bubble 10s ease-in-out infinite;
+      animation-delay: 0;
+    }
+
+    &[data-list='2'] {
+      top: 10%;
+      left: 2.5%;
+      animation: bubble 10s reverse ease-in-out infinite;
+      animation-delay: 0.3s;
+    }
+
+    &[data-list='3'] {
+      top: 15%;
+      left: 29.5%;
+
+      @media (width < 96rem) {
+        left: 29%;
+      }
+    }
+
+    &[data-list='4'] {
+      top: 50%;
+      left: 17.5%;
+    }
+
+    &[data-list='5'] {
+      top: 3%;
+      right: 15%;
+    }
+  }
+}
+
 .typewriter {
   &::before {
     content: '';
@@ -107,9 +278,64 @@
 
 .advantage-list {
   li {
+    padding-left: 8px;
+
     &:not(:last-child) {
       margin-bottom: 16px;
     }
+
+    &::after {
+      position: absolute;
+      bottom: -4px;
+      left: -20px;
+      width: calc(65%);
+      height: 2px;
+      background-color: var(--color-primary);
+      transition: transform 0.25s ease-out;
+      content: '';
+      transform: scaleX(0);
+
+      // underline position
+      transform-origin: bottom center;
+
+      @media (width < 96rem) {
+        width: 80%;
+      }
+
+      @media (width < 80rem) {
+        width: 100%;
+      }
+
+      @media (width < 64rem) {
+        width: 90%;
+      }
+    }
+
+    &.hover::after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
 </style>

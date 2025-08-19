@@ -3,14 +3,37 @@ const currentYear = ref(new Date().getFullYear())
 </script>
 
 <template>
-  <footer class="bg-primary px-[16px] py-[64px] text-white lg:px-0 lg:py-[100px]">
+  <div class="h-[80px] lg:h-[125px]">
+    <svg
+      class="waves w-full h-full"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28"
+      preserveAspectRatio="none"
+      shape-rendering="auto"
+    >
+      <defs>
+        <path
+          id="gentle-wave"
+          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+        />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,108,168,0.4" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0,108,168,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,108,168,0.1)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#006aa8" />
+      </g>
+    </svg>
+  </div>
+  <footer class="bg-primary px-[16px] py-[64px] text-white lg:px-0 lg:py-[100px] relative">
     <div class="container mx-auto mb-14 flex flex-col justify-start lg:flex-row lg:justify-around">
       <nav class="menu mb-10 flex flex-col items-center lg:mb-0 lg:flex-row">
-        <NuxtLink href="#" class="mb-4 text-lg lg:mb-0 lg:text-xl">產品說明</NuxtLink>
-        <NuxtLink href="#" class="mb-4 text-lg lg:mb-0 lg:text-xl">使用需知</NuxtLink>
-        <NuxtLink href="#" class="mb-4 text-lg lg:mb-0 lg:text-xl">需求造價與資源下載</NuxtLink>
-        <NuxtLink href="#" class="mb-4 text-lg lg:mb-0 lg:text-xl">工程實績</NuxtLink>
-        <NuxtLink href="#" class="text-lg lg:text-xl">影音頻道</NuxtLink>
+        <NuxtLink class="mb-4 text-lg lg:mb-0 lg:text-xl" href="#">產品說明</NuxtLink>
+        <NuxtLink class="mb-4 text-lg lg:mb-0 lg:text-xl" href="#">使用需知</NuxtLink>
+        <NuxtLink class="mb-4 text-lg lg:mb-0 lg:text-xl" href="#">需求造價與資源下載</NuxtLink>
+        <NuxtLink class="mb-4 text-lg lg:mb-0 lg:text-xl" href="#">工程實績</NuxtLink>
+        <NuxtLink class="text-lg lg:text-xl" href="#">影音頻道</NuxtLink>
       </nav>
       <div class="">
         <p class="text-lg lg:text-xl">正在旺企業有限公司</p>
@@ -65,6 +88,40 @@ $header-margin: 32px;
         }
       }
     }
+  }
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 14s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 20s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 31s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 40s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
   }
 }
 </style>

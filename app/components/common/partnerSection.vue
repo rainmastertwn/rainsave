@@ -1,0 +1,54 @@
+<script lang="ts" setup></script>
+
+<template>
+  <section class="container mb-16">
+    <h3 class="mb-6 text-center text-3xl font-bold col-span-12">友善連結</h3>
+    <div class="grid grid-cols-1 lg:grid-cols-3 mb-6">
+      <div class="flex items-center justify-center mb-4 lg:mb-0 min-h-[80px]">
+        <img class="w-[175px] h-auto" src="~/assets/images/partner/sgs@logo.svg" alt="" srcset="" />
+      </div>
+      <div class="flex items-center justify-center mb-4 lg:mb-0 min-h-[80px]">
+        <img
+          class="max-w-[350px] h-auto"
+          src="~/assets/images/partner/bsmi@logo.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="flex items-center justify-center min-h-[80px]">
+        <img
+          class="max-w-[250px] h-auto"
+          src="~/assets/images/partner/itri@logo.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3">
+      <div class="flex items-center justify-center mb-4 lg:mb-0 min-h-[80px]">
+        <img
+          class="max-w-[200px] h-auto"
+          src="~/assets/images/partner/taf@logo.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="flex items-center justify-center mb-4 lg:mb-0 min-h-[80px]">
+        <img
+          class="max-w-[150px] h-auto"
+          src="~/assets/images/partner/nima@logo.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="flex items-center justify-center min-h-[80px]">
+        <img
+          class="max-w-[150px] h-auto"
+          src="~/assets/images/partner/wra@logo.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </div>
+  </section>
+</template>

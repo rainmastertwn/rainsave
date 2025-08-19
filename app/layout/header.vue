@@ -13,7 +13,7 @@ const toggleMenu = (): void => {
       <div class="flex items-center">
         <img
           class="h-[50px] w-[50px] lg:h-[65px] lg:w-[65px]"
-          src="~/assets/images/rainsave-cube@blue.svg"
+          src="~/assets/images/rainsave@logo.svg"
         />
         <div class="ml-2 flex flex-row items-center lg:ml-4">
           <h3 class="text-xl font-semibold uppercase lg:text-3xl xl:text-4xl">
@@ -32,11 +32,11 @@ const toggleMenu = (): void => {
   <div class="mobile-content block lg:hidden" :class="{ 'menu-open': mobileMenuStatus }">
     <div class="container">
       <ul class="mx-2 mt-[60px] flex flex-col">
-        <li><NuxtLink href="#" class="text-xl">產品說明</NuxtLink></li>
-        <li><NuxtLink href="#" class="text-xl">使用需知</NuxtLink></li>
-        <li><NuxtLink href="#" class="text-xl">需求造價與資源下載</NuxtLink></li>
-        <li><NuxtLink href="#" class="text-xl">工程實績</NuxtLink></li>
-        <li><NuxtLink href="#" class="text-xl">影音頻道</NuxtLink></li>
+        <li><NuxtLink class="text-xl" href="#">產品說明</NuxtLink></li>
+        <li><NuxtLink class="text-xl" href="#">使用需知</NuxtLink></li>
+        <li><NuxtLink class="text-xl" href="#">需求造價與資源下載</NuxtLink></li>
+        <li><NuxtLink class="text-xl" href="#">工程實績</NuxtLink></li>
+        <li><NuxtLink class="text-xl" href="#">影音頻道</NuxtLink></li>
       </ul>
     </div>
   </div>

@@ -1,28 +1,39 @@
 <script lang="ts" setup>
-import BannerSection from '~/components/index/bannerSection.vue'
+import TitleSection from '~/components/common/titleSection.vue'
 import AdvantageSection from '~/components/index/advantageSection.vue'
+import VideoSection from '~/components/index/videoSection.vue'
+import FeatureSection from '~/components/index/featureSection.vue'
+import AdSection from '~/components/common/adSection.vue'
+import ConstructionSection from '~/components/index/constructionSection.vue'
+import ChooseUs from '~/components/index/chooseUs.vue'
+import PartnerSection from '~/components/common/partnerSection.vue'
 </script>
 
 <template>
-  <!-- banner section -->
-  <BannerSection />
+  <!-- title section -->
+  <TitleSection />
   <!-- product review -->
   <AdvantageSection />
 
-  <section class="container">
-    <div class="overflow-hidden rounded-lg border-2 border-black">
-      <img class="w-full" src="https://placehold.co/1440x275?text=video block" alt="占位圖" />
-    </div>
-  </section>
+  <!-- video demo section -->
+  <VideoSection />
 
-  <div class="height-space"></div>
+  <!-- feature section -->
+  <FeatureSection />
+
+  <!-- ad section -->
+  <AdSection />
+
+  <!-- construction section -->
+  <ConstructionSection />
+
+  <!-- 知識分享區塊 -->
+
+  <!-- choose us section -->
+  <ChooseUs />
+
+  <!-- partner section -->
+  <PartnerSection />
+
+  <div class="h-[100px]"></div>
 </template>
-
-<style lang="scss" scoped>
-.height-space {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2000px;
-}
-</style>

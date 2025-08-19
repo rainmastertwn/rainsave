@@ -11,11 +11,7 @@ const toggleMenu = (): void => {
   <header class="bg-white-set sticky top-0 z-[1000]">
     <div class="container flex items-center justify-between py-4 lg:py-6">
       <div class="flex items-center">
-        <NuxtImg
-          class="h-[50px] w-[50px] lg:h-[65px] lg:w-[65px]"
-          src="/rainsave@logo.svg"
-          format="webp"
-        />
+        <NuxtImg class="h-[50px] w-[50px] lg:h-[65px] lg:w-[65px]" src="/rainsave@logo.svg" />
         <div class="ml-2 flex flex-row items-center lg:ml-4">
           <h3 class="text-xl font-semibold uppercase lg:text-3xl xl:text-4xl">
             Rain Save 儲集框架

@@ -11,7 +11,6 @@
           alt=""
           srcset=""
           loading="lazy"
-          format="webp"
         />
       </div>
       <div class="flex items-center justify-center mb-4 lg:mb-0 min-h-[80px]">

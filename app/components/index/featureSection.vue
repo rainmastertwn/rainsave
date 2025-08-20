@@ -29,8 +29,8 @@ const playVideo = (): void => {
           format="webp"
         />
 
-        <video v-if="isVideoPlay" ref="videoRef" controls playsinline muted preload="none">
-          <source src="~/assets/video/rainsave@goal.webm" type="video/mp4" />
+        <video v-if="isVideoPlay" ref="videoRef" controls playsinline muted>
+          <source src="~/assets/video/rainsave@goal.mp4" type="video/mp4" />
         </video>
       </div>
     </div>

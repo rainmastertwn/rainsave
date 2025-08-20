@@ -25,7 +25,7 @@ const playVideo = () => {
   <section class="container mt-10 mb-10 lg:mt-20 lg:mb-20">
     <div class="relative overflow-hidden rounded-lg">
       <video class="w-full mt-[-1px]" ref="videoRef" muted @ended="videoEnded">
-        <source src="~/assets/video/rainsave@hight-layers.webm" type="video/mp4" />
+        <source src="~/assets/video/rainsave@hight-layers.mp4" type="video/mp4" />
       </video>
 
       <VideoIcon

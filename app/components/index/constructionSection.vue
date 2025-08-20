@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import VideoIcon from '~/components/common/videoIcon.vue'
-import VideoWorkDemo from '~/assets/video/rainsave@workDemo.webm'
-import VideoInstall from '~/assets/video/rainsave@install.webm'
+import VideoWorkDemo from '~/assets/video/rainsave@workDemo.mp4'
+import VideoInstall from '~/assets/video/rainsave@install.mp4'
 import CloseIcon from '~/components/common/closeIcon.vue'
 
 const isDialogVisible = ref<boolean>(false)
@@ -68,7 +68,7 @@ const handleCloseDialog = () => {
       </div>
     </template>
     <div class="video-container">
-      <video ref="videoRef" controls playsinline preload="none">
+      <video ref="videoRef" controls playsinline>
         <source type="video/mp4" :src="currentVideo" />
       </video>
     </div>

@@ -3,7 +3,7 @@ const currentYear = ref(new Date().getFullYear())
 </script>
 
 <template>
-  <div class="h-[80px] lg:h-[125px]">
+  <div class="h-[80px] lg:h-[125px] mb-[-2px]">
     <svg
       class="waves w-full h-full"
       xmlns="http://www.w3.org/2000/svg"

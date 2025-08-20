@@ -23,11 +23,11 @@
   &::after {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: -4px;
+    width: calc(100% + 8px);
     height: 0;
     background-color: var(--color-default-blue);
-    opacity: 0.5;
+    opacity: 0.2;
     transition: all 0.3s ease;
     content: '';
     transform-origin: bottom center;
@@ -35,7 +35,7 @@
 
   &:hover {
     &::after {
-      height: 20%;
+      height: 100%;
     }
   }
 }

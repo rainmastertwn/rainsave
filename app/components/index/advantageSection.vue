@@ -82,7 +82,7 @@ const listLeave = (event: MouseEvent): void => {
       <h3 class="typewriter mb-4 min-h-[35px] text-3xl font-bold"></h3>
       <ol class="advantage-list w-[85%] md:w-[70%] lg:w-[80%]">
         <li
-          class="relative cursor-pointer text-xl"
+          class="relative text-xl"
           data-list="1"
           :class="{
             hover: advantageHoverValue === '1'
@@ -91,7 +91,7 @@ const listLeave = (event: MouseEvent): void => {
           儲集框架 95%儲水體積。
         </li>
         <li
-          class="relative cursor-pointer text-xl"
+          class="relative text-xl"
           data-list="2"
           :class="{
             hover: advantageHoverValue === '2'
@@ -100,7 +100,7 @@ const listLeave = (event: MouseEvent): void => {
           4cm側板提升水平抗壓能力。
         </li>
         <li
-          class="relative cursor-pointer text-xl"
+          class="relative text-xl"
           data-list="3"
           :class="{
             hover: advantageHoverValue === '3'
@@ -109,7 +109,7 @@ const listLeave = (event: MouseEvent): void => {
           連續性的柱狀支撐結構。
         </li>
         <li
-          class="relative cursor-pointer text-xl"
+          class="relative text-xl"
           data-list="4"
           :class="{
             hover: advantageHoverValue === '4'
@@ -118,7 +118,7 @@ const listLeave = (event: MouseEvent): void => {
           多方向性的組裝方式。
         </li>
         <li
-          class="relative cursor-pointer text-xl"
+          class="relative text-xl"
           data-list="5"
           :class="{
             hover: advantageHoverValue === '5'
@@ -298,13 +298,13 @@ const listLeave = (event: MouseEvent): void => {
     &::after {
       position: absolute;
       bottom: 0;
-      left: 4px;
-      width: 100%;
+      left: -4px;
+      width: calc(100% + 8px);
 
       // height: 2.5px;
       height: 0;
       background-color: var(--color-primary);
-      opacity: 0.35;
+      opacity: 0.2;
 
       // transition: transform 0.25s ease-out;
       transition: all 0.3s ease;
@@ -317,7 +317,7 @@ const listLeave = (event: MouseEvent): void => {
     }
 
     &.hover::after {
-      height: 40%;
+      height: 100%;
 
       // transform: scaleX(1);
     }

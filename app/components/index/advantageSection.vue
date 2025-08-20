@@ -17,7 +17,7 @@ const listLeave = (event: MouseEvent): void => {
       <div class="hover-wrap relative">
         <div class="circle-list">
           <div
-            class="circle"
+            class="circle cursor-pointer"
             data-list="1"
             :class="{ hover: advantageHoverValue === '1' }"
             @mouseenter="listEnter"
@@ -26,7 +26,7 @@ const listLeave = (event: MouseEvent): void => {
             1
           </div>
           <div
-            class="circle"
+            class="circle cursor-pointer"
             data-list="2"
             :class="{ hover: advantageHoverValue === '2' }"
             @mouseenter="listEnter"
@@ -35,7 +35,7 @@ const listLeave = (event: MouseEvent): void => {
             2
           </div>
           <div
-            class="circle"
+            class="circle cursor-pointer"
             data-list="3"
             :class="{ hover: advantageHoverValue === '3' }"
             @mouseenter="listEnter"
@@ -44,7 +44,7 @@ const listLeave = (event: MouseEvent): void => {
             3
           </div>
           <div
-            class="circle"
+            class="circle cursor-pointer"
             data-list="4"
             :class="{ hover: advantageHoverValue === '4' }"
             @mouseenter="listEnter"
@@ -53,7 +53,7 @@ const listLeave = (event: MouseEvent): void => {
             4
           </div>
           <div
-            class="circle"
+            class="circle cursor-pointer"
             data-list="5"
             :class="{ hover: advantageHoverValue === '5' }"
             @mouseenter="listEnter"

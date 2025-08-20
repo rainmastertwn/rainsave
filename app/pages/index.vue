@@ -1,7 +1,10 @@
 <script lang="ts" setup>
 import TitleSection from '~/components/common/titleSection.vue'
 import AdvantageSection from '~/components/index/advantageSection.vue'
+// video section
 import VideoSection from '~/components/index/videoSection.vue'
+import VideoSectionMp4 from '~/components/index/videoSectionMp4.vue'
+
 import FeatureSection from '~/components/index/featureSection.vue'
 import AdSection from '~/components/common/adSection.vue'
 import ConstructionSection from '~/components/index/constructionSection.vue'
@@ -17,7 +20,8 @@ import PartnerSection from '~/components/common/partnerSection.vue'
   <AdvantageSection />
 
   <!-- video demo section -->
-  <VideoSection />
+  <!-- <VideoSection /> -->
+  <VideoSectionMp4 />
 
   <!-- feature section -->
   <FeatureSection />

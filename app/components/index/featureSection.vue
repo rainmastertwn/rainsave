@@ -1,19 +1,37 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import VideoIcon from '~/components/common/videoIcon.vue'
+
+const isVideoPlay = ref<boolean>(false)
+const videoRef = ref<HTMLVideoElement | null>(null)
+const playVideo = (): void => {
+  isVideoPlay.value = true
+  nextTick(() => {
+    videoRef.value?.play()
+  })
+}
+</script>
 
 <template>
   <section class="container mb-16 grid grid-cols-12">
     <div
       class="col-span-12 md:mr-0 lg:mr-6 2xl:mr-0 lg:col-span-7 flex items-center justify-center"
     >
-      <div class="overflow-hidden rounded-md mb-8 lg:mb-0">
+      <div class="overflow-hidden relative rounded-md mx-0 lg:mx-8 mb-8 lg:mb-0">
+        <VideoIcon class="video-icon" v-if="isVideoPlay === false" @click="playVideo" />
+
         <NuxtImg
           class="w-full"
-          src="index/feature.png"
+          src="index/feature@demo.png"
           alt=""
+          v-if="isVideoPlay === false"
           srcset=""
           loading="lazy"
           format="webp"
         />
+
+        <video v-if="isVideoPlay" ref="videoRef" controls playsinline muted preload="none">
+          <source src="~/assets/video/rainsave@goal.webm" type="video/mp4" />
+        </video>
       </div>
     </div>
     <div class="col-span-12 lg:col-span-5">
@@ -46,5 +64,12 @@ ol {
       margin-bottom: 16px;
     }
   }
+}
+
+.video-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

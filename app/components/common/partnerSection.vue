@@ -37,7 +37,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-3">
       <div class="flex items-center justify-center mb-4 lg:mb-0 min-h-[80px]">
         <NuxtImg
-          class="max-w-[200px] h-auto"
+          class="max-w-[150px] h-auto"
           src="partner/taf@logo.png"
           alt=""
           srcset=""
@@ -47,8 +47,8 @@
       </div>
       <div class="flex items-center justify-center mb-4 lg:mb-0 min-h-[80px]">
         <NuxtImg
-          class="max-w-[150px] h-auto"
-          src="partner/nima@logo.png"
+          class="min-h-[65px] h-auto"
+          src="partner/wra@logo.png"
           alt=""
           srcset=""
           loading="lazy"
@@ -57,8 +57,8 @@
       </div>
       <div class="flex items-center justify-center min-h-[80px]">
         <NuxtImg
-          class="max-w-[150px] h-auto"
-          src="partner/wra@logo.png"
+          class="max-w-[300px] h-auto"
+          src="partner/nima@logo.png"
           alt=""
           srcset=""
           loading="lazy"

@@ -64,9 +64,9 @@ const onVideoLoaded = () => {
   </section>
   <ElDialog
     v-model="isDialogVisible"
-    width="80%"
     :before-close="handleCloseDialog"
     :show-close="false"
+    modal-class="video-resize-dialog"
   >
     <template class="relative" #header="{ close }">
       <div class="close-icon-wrap">

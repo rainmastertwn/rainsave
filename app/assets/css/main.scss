@@ -45,3 +45,15 @@
   position: relative;
   padding-bottom: 0;
 }
+
+.video-resize-dialog .el-dialog {
+  width: 65%;
+
+  @media (width < 64rem) {
+    width: 75%;
+  }
+
+  @media (width < 48rem) {
+    width: 90%;
+  }
+}

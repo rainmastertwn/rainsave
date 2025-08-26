@@ -6,13 +6,14 @@ import CloseIcon from '~/components/common/closeIcon.vue'
 
 const isDialogVisible = ref<boolean>(false)
 const videoRef = ref<HTMLVideoElement | null>(null)
+const videoLoading = ref<boolean>(false)
 const currentVideo = ref<string>('')
 const openVideoDialog = (type: string) => {
   isDialogVisible.value = true
+  videoLoading.value = true
   currentVideo.value = type === 'install' ? VideoInstall : VideoWorkDemo
   nextTick(() => {
     videoRef.value?.load()
-    videoRef.value?.play()
   })
 }
 
@@ -22,6 +23,11 @@ const handleCloseDialog = () => {
     videoRef.value.pause()
     videoRef.value.currentTime = 0
   }
+}
+
+const onVideoLoaded = () => {
+  videoLoading.value = false
+  videoRef.value?.play()
 }
 </script>
 
@@ -67,8 +73,14 @@ const handleCloseDialog = () => {
         <CloseIcon class="close-icon" @click="close" />
       </div>
     </template>
-    <div class="video-container">
-      <video ref="videoRef" controls playsinline>
+    <div class="video-container" v-loading="videoLoading">
+      <video
+        class="w-full min-h-[50vh]"
+        ref="videoRef"
+        controls
+        playsinline
+        @loadeddata="onVideoLoaded"
+      >
         <source type="video/mp4" :src="currentVideo" />
       </video>
     </div>
@@ -87,6 +99,6 @@ const handleCloseDialog = () => {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 99;
+  z-index: 3000; // override v-loading wrap
 }
 </style>

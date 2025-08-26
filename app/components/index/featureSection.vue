@@ -2,12 +2,16 @@
 import VideoIcon from '~/components/common/videoIcon.vue'
 
 const isVideoPlay = ref<boolean>(false)
+const videoLoading = ref<boolean>(false)
 const videoRef = ref<HTMLVideoElement | null>(null)
 const playVideo = (): void => {
   isVideoPlay.value = true
-  nextTick(() => {
-    videoRef.value?.play()
-  })
+  videoLoading.value = true
+}
+
+const onVideoLoaded = (): void => {
+  videoLoading.value = false
+  videoRef.value?.play()
 }
 </script>
 
@@ -16,7 +20,10 @@ const playVideo = (): void => {
     <div
       class="col-span-12 md:mr-0 lg:mr-6 2xl:mr-0 lg:col-span-7 flex items-center justify-center"
     >
-      <div class="overflow-hidden relative rounded-md mx-0 lg:mx-8 mb-8 lg:mb-0">
+      <div
+        class="overflow-hidden relative rounded-md mx-0 lg:mx-8 mb-8 lg:mb-0"
+        v-loading="videoLoading"
+      >
         <VideoIcon class="video-icon" v-if="isVideoPlay === false" @click="playVideo" />
 
         <NuxtImg
@@ -29,7 +36,15 @@ const playVideo = (): void => {
           format="webp"
         />
 
-        <video v-if="isVideoPlay" ref="videoRef" controls playsinline muted>
+        <video
+          class="w-full"
+          v-if="isVideoPlay"
+          ref="videoRef"
+          controls
+          playsinline
+          muted
+          @loadeddata="onVideoLoaded"
+        >
           <source src="~/assets/video/rainsave@goal.mp4" type="video/mp4" />
         </video>
       </div>

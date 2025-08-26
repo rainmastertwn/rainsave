@@ -2,7 +2,7 @@
 import TitleSection from '~/components/common/titleSection.vue'
 import AdvantageSection from '~/components/index/advantageSection.vue'
 // video section
-import VideoSection from '~/components/index/videoSection.vue'
+// import VideoSection from '~/components/index/videoSection.vue'
 import VideoSectionMp4 from '~/components/index/videoSectionMp4.vue'
 
 import FeatureSection from '~/components/index/featureSection.vue'

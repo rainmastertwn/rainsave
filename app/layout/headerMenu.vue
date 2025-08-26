@@ -15,7 +15,7 @@ const toggleBurger = (): void => {
   <div class="menu-wrap" :class="{ 'menu-opened': mobileMenuStatus }">
     <nav class="menu hidden items-center lg:flex">
       <NuxtLink class="text-base lg:text-lg xl:text-xl" href="#">產品說明</NuxtLink>
-      <NuxtLink class="text-base lg:text-lg xl:text-xl" href="#">使用需知</NuxtLink>
+      <NuxtLink class="text-base lg:text-lg xl:text-xl" href="/detail">使用需知</NuxtLink>
       <NuxtLink class="text-base lg:text-lg xl:text-xl" href="#">需求造價與資源下載</NuxtLink>
       <NuxtLink class="text-base lg:text-lg xl:text-xl" href="#">工程實績</NuxtLink>
       <NuxtLink class="text-base lg:text-lg xl:text-xl" href="#">影音頻道</NuxtLink>

@@ -30,7 +30,7 @@ const currentYear = ref(new Date().getFullYear())
     <div class="container mx-auto mb-14 flex flex-col justify-start lg:flex-row lg:justify-around">
       <nav class="menu mb-10 flex flex-col items-center lg:mb-0 lg:flex-row">
         <NuxtLink class="mb-4 text-lg lg:mb-0 lg:text-xl" href="#">產品說明</NuxtLink>
-        <NuxtLink class="mb-4 text-lg lg:mb-0 lg:text-xl" href="#">使用需知</NuxtLink>
+        <NuxtLink class="mb-4 text-lg lg:mb-0 lg:text-xl" href="/detail">使用需知</NuxtLink>
         <NuxtLink class="mb-4 text-lg lg:mb-0 lg:text-xl" href="#">需求造價與資源下載</NuxtLink>
         <NuxtLink class="mb-4 text-lg lg:mb-0 lg:text-xl" href="#">工程實績</NuxtLink>
         <NuxtLink class="text-lg lg:text-xl" href="#">影音頻道</NuxtLink>

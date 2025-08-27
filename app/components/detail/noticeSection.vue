@@ -96,21 +96,27 @@
         </div>
       </div>
     </div>
-    <div class="col-span-12 lg:col-span-6 ml-0 lg:ml-6">
-      <div class="notice-icon mb-6"></div>
-      <div class="">
-        <h3 class="mb-6 text-2xl font-bold">安裝前注意事項</h3>
-        <ol class="ml-6 list-decimal mb-6">
-          <li class="text-xl">主要應用於地表面下的框架式雨水收集系統。</li>
-          <li class="text-xl">材質為可回收聚丙烯 ，儲水率達 95% 以上。</li>
-        </ol>
-        <h3 class="mb-6 text-2xl font-bold">整體注意事項</h3>
-        <ol class="ml-6 list-decimal">
-          <li class="text-xl">禁止襯墊未標記於圖說內之物品於施工面上。(如木板，木條，PS板)</li>
-          <li class="text-xl">非經專業人員確認前，禁止於鋪設基礎上挖坑沉砂。</li>
-          <li class="text-xl">禁止安裝於鬆軟地盤上。</li>
-          <li class="text-xl">主體材料如有破損應立即更換，切勿安裝。</li>
-        </ol>
+    <div class="col-span-12 lg:col-span-6 ml-0 lg:ml-6 flex flex-col justify-center">
+      <div>
+        <div class="notice-icon mb-6 flex items-center">
+          <NuxtImg class="alarm-icon w-[60px] lg:w-[70px] mr-4" src="detail/notice@icon.png" />
+          <NuxtImg class="alarm-icon w-[60px] lg:w-[70px] mr-4" src="detail/notice@icon.png" />
+          <NuxtImg class="alarm-icon w-[60px] lg:w-[70px]" src="detail/notice@icon.png" />
+        </div>
+        <div class="">
+          <h3 class="mb-6 text-3xl font-bold">安裝前注意事項</h3>
+          <ol class="ml-6 list-decimal mb-8">
+            <li class="text-xl">主要應用於地表面下的框架式雨水收集系統。</li>
+            <li class="text-xl">材質為可回收聚丙烯 ，儲水率達 95% 以上。</li>
+          </ol>
+          <h3 class="mb-6 text-3xl font-bold">整體注意事項</h3>
+          <ol class="ml-6 list-decimal">
+            <li class="text-xl">禁止襯墊未標記於圖說內之物品於施工面上。(如木板，木條，PS板)</li>
+            <li class="text-xl">非經專業人員確認前，禁止於鋪設基礎上挖坑沉砂。</li>
+            <li class="text-xl">禁止安裝於鬆軟地盤上。</li>
+            <li class="text-xl">主體材料如有破損應立即更換，切勿安裝。</li>
+          </ol>
+        </div>
       </div>
     </div>
   </section>
@@ -124,6 +130,54 @@ ol {
     &:not(:last-child) {
       margin-bottom: 16px;
     }
+  }
+}
+
+.alarm-icon {
+  &:nth-child(1) {
+    animation:
+      opacity 0.6s 1.8s ease forwards,
+      scale 2.5s 2s ease infinite;
+  }
+
+  &:nth-child(2) {
+    animation:
+      opacity 0.6s 2s ease forwards,
+      scale 2.5s 2.4s ease infinite;
+  }
+
+  &:nth-child(3) {
+    animation:
+      opacity 0.6s 2.2s ease forwards,
+      scale 2.5s 2.8s ease infinite;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  15% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 </style>

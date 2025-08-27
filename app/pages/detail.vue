@@ -3,6 +3,12 @@ import TitleSection from '~/components/common/titleSection.vue'
 import NoticeSection from '~/components/detail/noticeSection.vue'
 import AdSection from '~/components/common/adSection.vue'
 
+import CollapseCaseSection from '~/components/detail/collapseCaseSection.vue'
+import CollapseSection from '~/components/detail/collapseSection.vue'
+
+import FloatCaseSection from '~/components/detail/floatCaseSection.vue'
+import FloatSection from '~/components/detail/floatSection.vue'
+
 import PartnerSection from '~/components/common/partnerSection.vue'
 </script>
 
@@ -16,8 +22,20 @@ import PartnerSection from '~/components/common/partnerSection.vue'
   <!-- ad section -->
   <AdSection />
 
+  <!-- collapse case section -->
+  <CollapseCaseSection />
+
+  <!-- collapse section -->
+  <CollapseSection />
+
   <!-- ad section -->
   <AdSection />
+
+  <!-- float case section -->
+  <FloatCaseSection />
+
+  <!-- float section -->
+  <FloatSection />
 
   <!-- partner section -->
   <PartnerSection />

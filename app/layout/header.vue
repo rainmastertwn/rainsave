@@ -1,9 +1,14 @@
 <script lang="ts" setup>
+import { menuItems } from './menu'
 import HeaderMenu from './headerMenu.vue'
 
 const mobileMenuStatus = ref<boolean>(false)
 const toggleMenu = (): void => {
   mobileMenuStatus.value = !mobileMenuStatus.value
+}
+
+const mobileMenuClick = (): void => {
+  mobileMenuStatus.value = false
 }
 </script>
 
@@ -36,11 +41,11 @@ const toggleMenu = (): void => {
   <div class="mobile-content block lg:hidden" :class="{ 'menu-open': mobileMenuStatus }">
     <div class="container">
       <ul class="mx-2 mt-[60px] flex flex-col">
-        <li><NuxtLink class="text-xl" href="#">產品說明</NuxtLink></li>
-        <li><NuxtLink class="text-xl" href="/detail">使用需知</NuxtLink></li>
-        <li><NuxtLink class="text-xl" href="#">需求造價與資源下載</NuxtLink></li>
-        <li><NuxtLink class="text-xl" href="#">工程實績</NuxtLink></li>
-        <li><NuxtLink class="text-xl" href="#">影音頻道</NuxtLink></li>
+        <li v-for="item in menuItems" :key="item.label">
+          <NuxtLink class="text-xl" :href="item.to" @click="mobileMenuClick">{{
+            item.label
+          }}</NuxtLink>
+        </li>
       </ul>
     </div>
   </div>

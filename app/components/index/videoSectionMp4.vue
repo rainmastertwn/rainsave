@@ -8,7 +8,7 @@ onMounted(() => {
     if (videoRef.value) {
       videoRef.value.play()
     }
-  }, 900)
+  }, 1100)
 })
 
 const videoEnded = () => {

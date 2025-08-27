@@ -11,7 +11,7 @@ const toggleDialog = () => {
   <section class="container mb-16 grid grid-cols-12">
     <div class="col-span-12 lg:col-span-5 lg:col-start-2 mr-0 mb-8 lg:mb-0 lg:mr-6">
       <h3 class="mb-6 text-center text-2xl font-bold">雨水積磚 工程實績</h3>
-      <div class="case-wrap grid grid-cols-2 gap-4">
+      <div class="case-wrap grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="case relative overflow-hidden rounded-md">
           <NuxtImg
             class="z-0 w-full h-full object-cover"
@@ -91,6 +91,10 @@ const toggleDialog = () => {
     background-color: var(--color-default-blue);
     opacity: 0.7;
     transition: all 0.3s ease;
+
+    @media (width < 64rem) {
+      height: 64px;
+    }
   }
 
   h4 {
@@ -102,6 +106,10 @@ const toggleDialog = () => {
     opacity: 0;
     transition: all 0.2s ease;
     transition-delay: 0.1s;
+
+    @media (width < 64rem) {
+      opacity: 1;
+    }
   }
 
   &:hover {

@@ -1,7 +1,10 @@
 <script lang="ts" setup>
+import { menuItems } from './menu'
+
 const props = defineProps({
   mobileMenuStatus: Boolean
 })
+
 const emit = defineEmits<{
   (e: 'toggleBurger'): void
 }>()
@@ -14,11 +17,14 @@ const toggleBurger = (): void => {
 <template>
   <div class="menu-wrap" :class="{ 'menu-opened': mobileMenuStatus }">
     <nav class="menu hidden items-center lg:flex">
-      <NuxtLink class="text-base lg:text-lg xl:text-xl" href="#">產品說明</NuxtLink>
-      <NuxtLink class="text-base lg:text-lg xl:text-xl" href="/detail">使用需知</NuxtLink>
-      <NuxtLink class="text-base lg:text-lg xl:text-xl" href="#">需求造價與資源下載</NuxtLink>
-      <NuxtLink class="text-base lg:text-lg xl:text-xl" href="#">工程實績</NuxtLink>
-      <NuxtLink class="text-base lg:text-lg xl:text-xl" href="#">影音頻道</NuxtLink>
+      <NuxtLink
+        class="text-base lg:text-lg xl:text-xl"
+        v-for="item in menuItems"
+        :key="item.label"
+        :to="item.to"
+      >
+        {{ item.label }}
+      </NuxtLink>
     </nav>
     <nav class="mobile-menu flex lg:hidden">
       <div class="burger-container" @click="toggleBurger">

@@ -1,0 +1,18 @@
+[
+  {
+    "type": "滲透型",
+    "id": 1,
+    "listName": "test",
+    "caseTitle": "test2 滲透型積磚",
+    "content": "此案位於南投921地震紀念公園旁，係為公共工程案。<br />總計施作100m³，上方覆土約45~60cm，為儲水再利用型。",
+    "images": ["maolo-1@nantou.png", "maolo-2@nantou.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 2,
+    "listName": "test2",
+    "caseTitle": "test2 滲透型積磚",
+    "content": "此案位於國立臺灣海洋大學內，係為公共工程案。<br />總計施作50m³，上方覆土約45~55cm，為儲水型(雨水主要提供各棟大樓廁所使用)。",
+    "images": ["ntou-1@keelung.png", "ntou-2@keelung.png"]
+  }
+]

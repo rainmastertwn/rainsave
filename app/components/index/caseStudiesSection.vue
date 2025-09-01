@@ -75,7 +75,7 @@ const toggleDialog = () => {
     </div>
   </section>
   <!-- toggle dialog -->
-  <ElDialog v-model="knowledgeDialog"> test </ElDialog>
+  <!-- <ElDialog v-model="knowledgeDialog"> test </ElDialog> -->
 </template>
 
 <style lang="scss" scoped>

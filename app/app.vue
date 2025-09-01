@@ -101,5 +101,6 @@ body {
 // set mobile/pad can not swipe to left / right
 body {
   overflow: hidden scroll;
+  width: 100% !important; // fixed mobile dialog toggle bug
 }
 </style>

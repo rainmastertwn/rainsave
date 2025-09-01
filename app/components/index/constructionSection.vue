@@ -70,7 +70,7 @@ const onVideoLoaded = () => {
   >
     <template class="relative" #header="{ close }">
       <div class="close-icon-wrap">
-        <CloseIcon class="close-icon" @click="close" />
+        <CloseIcon @click="close" />
       </div>
     </template>
     <div class="video-container" v-loading="videoLoading">
@@ -93,12 +93,5 @@ const onVideoLoaded = () => {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.close-icon-wrap {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 3000; // override v-loading wrap
 }
 </style>

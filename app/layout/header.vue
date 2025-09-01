@@ -1,14 +1,34 @@
 <script lang="ts" setup>
 import { menuItems } from './menu'
 import HeaderMenu from './headerMenu.vue'
+import ProductDialog from '~/components/dialog/productDialog.vue'
+import DemandDialog from '~/components/dialog/demandDialog.vue'
 
 const mobileMenuStatus = ref<boolean>(false)
 const toggleMenu = (): void => {
   mobileMenuStatus.value = !mobileMenuStatus.value
 }
 
-const mobileMenuClick = (): void => {
+const productDialogVisible = ref<boolean>(false)
+const demandDialogVisible = ref<boolean>(false)
+const openDialog = (dialogType: string): void => {
+  if (dialogType === 'product') {
+    productDialogVisible.value = true
+  }
+
+  if (dialogType === 'demand') {
+    demandDialogVisible.value = true
+  }
+}
+const mobileMenuClick = (dialogType?: string): void => {
   mobileMenuStatus.value = false
+  if (dialogType === 'product') {
+    productDialogVisible.value = true
+  }
+
+  if (dialogType === 'demand') {
+    demandDialogVisible.value = true
+  }
 }
 </script>
 
@@ -34,7 +54,11 @@ const mobileMenuClick = (): void => {
           />
         </div>
       </div>
-      <HeaderMenu :mobileMenuStatus="mobileMenuStatus" @toggleBurger="toggleMenu" />
+      <HeaderMenu
+        :mobileMenuStatus="mobileMenuStatus"
+        @toggleBurger="toggleMenu"
+        @openDialog="openDialog"
+      />
     </div>
   </header>
   <!-- mobile content -->
@@ -42,13 +66,17 @@ const mobileMenuClick = (): void => {
     <div class="container">
       <ul class="mx-2 mt-[60px] flex flex-col">
         <li v-for="item in menuItems" :key="item.label">
-          <NuxtLink class="text-xl" :href="item.to" @click="mobileMenuClick">{{
-            item.label
-          }}</NuxtLink>
+          <NuxtLink class="text-xl" :href="item.to" @click="mobileMenuClick(item.dialog)">
+            {{ item.label }}
+          </NuxtLink>
         </li>
       </ul>
     </div>
   </div>
+
+  <!-- dialog type -->
+  <ProductDialog v-model="productDialogVisible" />
+  <DemandDialog v-model="demandDialogVisible" />
 </template>
 
 <style lang="scss" scoped>

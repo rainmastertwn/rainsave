@@ -8,7 +8,7 @@
 .close {
   display: inline-block;
   width: 35px;
-  height: 35px;
+  height: 34px;
   background-color: #fff;
   border: 2px solid var(--color-primary);
   transition: all 0.3s ease;

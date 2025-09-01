@@ -7,10 +7,16 @@ const props = defineProps({
 
 const emit = defineEmits<{
   (e: 'toggleBurger'): void
+  (e: 'openDialog', dialogType: string): void
 }>()
 
 const toggleBurger = (): void => {
   emit('toggleBurger')
+}
+
+const openDialog = (dialogType?: string): void => {
+  if (!dialogType) return
+  emit('openDialog', dialogType)
 }
 </script>
 
@@ -18,10 +24,11 @@ const toggleBurger = (): void => {
   <div class="menu-wrap" :class="{ 'menu-opened': mobileMenuStatus }">
     <nav class="menu hidden items-center lg:flex">
       <NuxtLink
-        class="text-base lg:text-lg xl:text-xl"
+        class="text-base lg:text-lg xl:text-xl cursor-pointer"
         v-for="item in menuItems"
         :key="item.label"
         :to="item.to"
+        @click="openDialog(item.dialog)"
       >
         {{ item.label }}
       </NuxtLink>

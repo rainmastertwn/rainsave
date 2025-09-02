@@ -38,6 +38,12 @@
       height: 100%;
     }
   }
+
+  &.active {
+    &::after {
+      height: 100%;
+    }
+  }
 }
 
 // element plus setting
@@ -75,7 +81,7 @@
   }
 
   &.demand-dialog {
-    margin-top: 8vh;
+    margin-top: 6vh;
     width: 50%;
 
     @media (width < 64rem) {
@@ -89,7 +95,7 @@
         min-width: 230px; // default width setting
 
         @media (width < 64rem) {
-          min-width: 180px;
+          min-width: 160px;
         }
       }
     }

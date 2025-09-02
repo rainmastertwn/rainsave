@@ -63,13 +63,12 @@ const listLeave = (event: MouseEvent): void => {
           </div>
         </div>
 
-        <NuxtImg
+        <img
           class="w-full"
-          src="index/product@main.png"
+          src="~/assets/images/index/product@main.png"
           alt="Product Image"
           srcset=""
           fetchpriority="high"
-          format="webp"
         />
       </div>
     </div>

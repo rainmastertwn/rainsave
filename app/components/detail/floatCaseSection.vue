@@ -3,9 +3,9 @@
 <template>
   <section class="container mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
     <div class="case relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/floatCase-1.png"
+        src="~/assets/images/detail/floatCase-1.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -14,9 +14,9 @@
       <h4 class="z-1 text-white text-2xl font-bold">施工完成</h4>
     </div>
     <div class="case relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/floatCase-2.png"
+        src="~/assets/images/detail/floatCase-2.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -28,9 +28,9 @@
       <h5 class="z-1 text-white text-2xl font-bold">浮力問題發生前</h5>
     </div>
     <div class="case two-line relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/floatCase-3.png"
+        src="~/assets/images/detail/floatCase-3.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -42,9 +42,9 @@
       <h5 class="z-1 text-white text-2xl font-bold">浮力問題發生中</h5>
     </div>
     <div class="case two-line relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/floatCase-4.png"
+        src="~/assets/images/detail/floatCase-4.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -53,9 +53,9 @@
       <h5 class="z-1 text-white text-2xl font-bold">浮力問題發生中</h5>
     </div>
     <div class="case relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/floatCase-5.png"
+        src="~/assets/images/detail/floatCase-5.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -64,9 +64,9 @@
       <h4 class="z-1 text-white text-2xl font-bold">災後現場</h4>
     </div>
     <div class="case relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/floatCase-6.png"
+        src="~/assets/images/detail/floatCase-6.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -78,9 +78,9 @@
       <h5 class="z-1 text-white text-2xl font-bold">浮力問題發生後</h5>
     </div>
     <div class="case two-line relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/floatCase-7.png"
+        src="~/assets/images/detail/floatCase-7.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -89,9 +89,9 @@
       <h4 class="z-1 text-white text-xl font-bold">災後處理。<br />以抽水機將儲集之雨水抽出</h4>
     </div>
     <div class="case relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/floatCase-8.png"
+        src="~/assets/images/detail/floatCase-8.png"
         alt=""
         srcset=""
         loading="lazy"

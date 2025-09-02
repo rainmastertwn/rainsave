@@ -2,17 +2,145 @@
   {
     "type": "滲透型",
     "id": 1,
-    "listName": "test",
-    "caseTitle": "test2 滲透型積磚",
-    "content": "此案位於南投921地震紀念公園旁，係為公共工程案。<br />總計施作100m³，上方覆土約45~60cm，為儲水再利用型。",
-    "images": ["maolo-1@nantou.png", "maolo-2@nantou.png"]
+    "listName": "士林北藝中心",
+    "caseTitle": "士林北藝中心 雨水積磚",
+    "content": "此案位於捷運劍潭站旁，係為公共工程案。<br />總計施作<b> 153 m³</b>，上方覆土約25~45cm，為基地保水滲透型。",
+    "images": ["tpac-1@shilin.png", "tpac-2@shilin.png"]
   },
   {
     "type": "滲透型",
     "id": 2,
-    "listName": "test2",
-    "caseTitle": "test2 滲透型積磚",
-    "content": "此案位於國立臺灣海洋大學內，係為公共工程案。<br />總計施作50m³，上方覆土約45~55cm，為儲水型(雨水主要提供各棟大樓廁所使用)。",
-    "images": ["ntou-1@keelung.png", "ntou-2@keelung.png"]
+    "listName": "台北市日新國小",
+    "caseTitle": "台北市日新國小 雨水積磚",
+    "content": "此案位於捷運台北車站旁，係為公共工程案。<br />總計施作<b> 230 m³</b>，上方覆土約30~40cm，為基地保水滲透型。",
+    "images": ["rixinelementaryschool-1@taipei.png", "rixinelementaryschool-2@taipei.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 3,
+    "listName": "龜山區市地重劃",
+    "caseTitle": "龜山區市地重劃 雨水積磚",
+    "content": "此案位於桃園市龜山區，係為公共工程案。<br />總計施作<b> 86 m³</b>，上方覆土約40~60cm，為基地保水滲透型。",
+    "images": ["guishan-1@taoyuan.png", "guishan-2@taoyuan.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 4,
+    "listName": "高雄經濟部金屬中心",
+    "caseTitle": "高雄經濟部金屬中心 雨水積磚",
+    "content": "此案位於高雄楠梓，為張瑪龍建築師事務所設計，係為公共工程案。<br />總計施作<b> 52.5 m³</b>，上方覆土約30~50cm，為基地保水滲透型。",
+    "images": ["metalcenter-1@kaohsiung.png", "metalcenter-2@kaohsiung.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 5,
+    "listName": "北投區韋昌畫清江社區",
+    "caseTitle": "北投區韋昌畫清江社區 雨水積磚",
+    "content": "此案位於台北市北投區清江路91巷。<br />總計施作<b> 3 m³</b>，上方覆土約30~60cm，為基地保水滲透型。",
+    "images": ["weichang-1@taipei.png", "weichang-2@taipei.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 6,
+    "listName": "宜蘭市南屏國民小學",
+    "caseTitle": "宜蘭市南屏國民小學 雨水積磚",
+    "content": "此案位於宜蘭南屏國小，係為公共工程案。<br />總計施作<b> 87 m³</b>，上方覆土約30~60cm，為基地保水滲透型。",
+    "images": ["nanping-1@yilan.png", "nanping-2@yilan.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 7,
+    "listName": "桃園市蘆竹區安利鋼鐵廠",
+    "caseTitle": "桃園市蘆竹區安利鋼鐵廠 雨水積磚",
+    "content": "此案位於桃園市蘆竹區長榮路191號旁。<br />總計施作<b> 135 m³</b>，上方覆土約30~60cm，為基地保水滲透型。",
+    "images": ["anli-1@taoyuan.png", "anli-2@taoyuan.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 8,
+    "listName": "台北市大安區大安富御社區",
+    "caseTitle": "台北市大安區大安富御社區 雨水積磚",
+    "content": "此案位於台北市大安區臥龍街300號。<br />總計施作<b> 27 m³</b>，上方覆土約30~60cm，為基地保水滲透型。",
+    "images": ["daan-1@taipei.png", "daan-2@taipei.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 9,
+    "listName": "桃園市觀音區鴻錦十映社區",
+    "caseTitle": "桃園市觀音區鴻錦十映社區 雨水積磚",
+    "content": "此案位於桃園市觀音區保生九街。<br />總計施作<b> 28.5 m³</b>，上方覆土約50cm，為基地保水滲透型。",
+    "images": ["hongjin-1@taoyuan.png", "hongjin-2@taoyuan.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 10,
+    "listName": "台中市北屯區登陽釀時光社區",
+    "caseTitle": "台中市北屯區登陽釀時光社區 雨水積磚",
+    "content": "此案位於台中市北屯區南興路與敦富七街口。<br />總計施作<b> 43.75 m³</b>，上方覆土約45~60cm，為基地保水滲透型。",
+    "images": ["dengyang-1@taichung.png", "dengyang-2@taichung.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 11,
+    "listName": "金門縣金寧鄉榜林社區活動中心",
+    "caseTitle": "金門縣金寧鄉榜林社區活動中心 雨水積磚",
+    "content": "此案位於金門縣金寧鄉榜林社區活動中心，係為公共工程案。<br />總計施作<b> 57 m³</b>，上方覆土約45~60cm，為基地保水滲透型。",
+    "images": ["banglin-1@kinmen.png", "banglin-2@kinmen.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 12,
+    "listName": "台北市萬華區民凱萬錦社區",
+    "caseTitle": "台北市萬華區民凱萬錦社區 雨水積磚",
+    "content": "此案位於台北市萬華區民和街100號。<br />總計施作<b> 10 m³</b>，上方覆土約45~60cm，為基地保水滲透型。",
+    "images": ["minkai-1@taipei.png", "minkai-2@taipei.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 13,
+    "listName": "桃園市桃園區大觀雲滙社區",
+    "caseTitle": "桃園市桃園區大觀雲滙社區 雨水積磚",
+    "content": "此案位於桃園市桃園區大興西路三段與大吉街口。<br />總計施作<b> 16.9 m³</b>，上方覆土45~60cm，為基地保水滲透型。",
+    "images": ["daguanyunhui-1@taoyuan.png", "daguanyunhui-2@taoyuan.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 14,
+    "listName": "台北市松山區敦北文華社區",
+    "caseTitle": "台北市松山區敦北文華社區 雨水積磚",
+    "content": "此案位於台北市松山區南京東路四段52巷21號。<br />總計施作<b> 2 m³</b>，上方覆土45~60cm，為基地保水滲透型。",
+    "images": ["dunbeiwenhua-1@taipei.png", "dunbeiwenhua-2@taipei.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 15,
+    "listName": "新竹市香山區弘塑科技股份有限公司",
+    "caseTitle": "新竹市香山區弘塑科技股份有限公司 雨水積磚",
+    "content": "此案位於新竹市香山區中華路六段 89 號。<br />總計施作<b> 38 m³</b>，上方覆土約 45~60cm，為基地保水滲透型。",
+    "images": ["hongsu-1@hsinchu.png", "hongsu-2@hsinchu.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 16,
+    "listName": "台北市文山區遠雄晴川社區",
+    "caseTitle": "台北市文山區遠雄晴川社區 雨水積磚",
+    "content": "此案位於台北市文山區木柵路三段169巷10號。<br />總計施作<b> 9 m³</b>，上方覆土45~60cm，為基地保水滲透型。",
+    "images": ["yuanxiongqingchuan-1@taipei.png", "yuanxiongqingchuan-2@taipei.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 17,
+    "listName": "台北市北投區振華公園",
+    "caseTitle": "台北市北投區振華公園 雨水積磚",
+    "content": "此案位於台北市北投區振華公園，係為公共工程案。<br />總計施作<b> 180 m³</b>，上方覆土約45~60cm，為基地保水滲透型。",
+    "images": ["zhinhua-1@taipei.png", "zhinhua-2@taipei.png"]
+  },
+  {
+    "type": "滲透型",
+    "id": 18,
+    "listName": "新竹縣湖口鄉湖口文小非營利幼兒園",
+    "caseTitle": "新竹縣湖口鄉 湖口文小非營利幼兒園 雨水積磚",
+    "content": "此案位於新竹縣湖口鄉中正村的達生七街與達生八街交叉路口，係為公共工程案。<br />總計施作<b> 15 m³</b>，上方覆土45~60cm，為基地保水滲透型。",
+    "images": ["hukou-1@hsinchu.png", "hukou-2@hsinchu.png"]
   }
 ]

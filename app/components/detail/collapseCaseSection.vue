@@ -3,9 +3,9 @@
 <template>
   <section class="container mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
     <div class="case two-line relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/collapseCase-1.png"
+        src="~/assets/images/detail/collapseCase-1.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -14,9 +14,9 @@
       <h4 class="z-1 text-white text-xl font-bold">錯誤1: 未確實整平<br />錯誤2: 開挖範圍不足</h4>
     </div>
     <div class="case relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/collapseCase-2.png"
+        src="~/assets/images/detail/collapseCase-2.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -25,9 +25,9 @@
       <h4 class="z-1 text-white text-2xl font-bold">準備施工中</h4>
     </div>
     <div class="case two-line relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/collapseCase-3.png"
+        src="~/assets/images/detail/collapseCase-3.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -39,9 +39,9 @@
       </h4>
     </div>
     <div class="case two-line relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/collapseCase-4.png"
+        src="~/assets/images/detail/collapseCase-4.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -52,9 +52,9 @@
       </h4>
     </div>
     <div class="case relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/collapseCase-5.png"
+        src="~/assets/images/detail/collapseCase-5.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -63,9 +63,9 @@
       <h4 class="z-1 text-white text-2xl font-bold">持續施工中</h4>
     </div>
     <div class="case relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/collapseCase-6.png"
+        src="~/assets/images/detail/collapseCase-6.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -74,9 +74,9 @@
       <h4 class="z-1 text-white text-2xl font-bold">施工完成</h4>
     </div>
     <div class="case relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/collapseCase-8.png"
+        src="~/assets/images/detail/collapseCase-8.png"
         alt=""
         srcset=""
         loading="lazy"
@@ -85,9 +85,9 @@
       <h4 class="z-1 text-white text-2xl font-bold">災後處理</h4>
     </div>
     <div class="case relative overflow-hidden rounded-md">
-      <NuxtImg
+      <img
         class="z-0 w-full h-full object-cover"
-        src="detail/collapseCase-9.png"
+        src="~/assets/images/detail/collapseCase-9.png"
         alt=""
         srcset=""
         loading="lazy"

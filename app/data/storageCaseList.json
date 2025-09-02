@@ -4,7 +4,7 @@
     "id": 1,
     "listName": "南投貓羅溪",
     "caseTitle": "南投貓羅溪 雨水積磚",
-    "content": "此案位於南投921地震紀念公園旁，係為公共工程案。<br />總計施作100m³，上方覆土約45~60cm，為儲水再利用型。",
+    "content": "此案位於南投921地震紀念公園旁，係為公共工程案。<br />總計施作<b> 100 m³</b>，上方覆土約45~60cm，為儲水再利用型。",
     "images": ["maolo-1@nantou.png", "maolo-2@nantou.png"]
   },
   {
@@ -12,7 +12,39 @@
     "id": 2,
     "listName": "基隆海洋大學",
     "caseTitle": "基隆海洋大學 雨水積磚",
-    "content": "此案位於國立臺灣海洋大學內，係為公共工程案。<br />總計施作50m³，上方覆土約45~55cm，為儲水型(雨水主要提供各棟大樓廁所使用)。",
+    "content": "此案位於國立臺灣海洋大學內，係為公共工程案。<br />總計施作<b> 50 m³</b>，上方覆土約45~55cm，為儲水型(雨水主要提供各棟大樓廁所使用)。",
     "images": ["ntou-1@keelung.png", "ntou-2@keelung.png"]
+  },
+  {
+    "type": "儲水型",
+    "id": 3,
+    "listName": "基隆海科典藏館",
+    "caseTitle": "基隆海科館 雨水積磚",
+    "content": "此案位於國立海洋科技博物館，係為公共工程案。<br />總計施作<b> 75 m³</b>，上方覆土約45~115cm，為儲水型(為提供下方大客車停車場廁所使用)。",
+    "images": ["nmmst-1@keelung.png", "nmmst-2@keelung.png"]
+  },
+  {
+    "type": "儲水型",
+    "id": 4,
+    "listName": "象山中強公園",
+    "caseTitle": "象山公園 雨水積磚",
+    "content": "此案位於捷運象山站旁，係為公共工程案。<br />總計施作<b> 252 m³</b>，上方覆土約50~55cm，為儲水再利用型。",
+    "images": ["zhongqiang-park-1@xiangshan.png", "zhongqiang-park-2@xiangshan.png"]
+  },
+  {
+    "type": "儲水型",
+    "id": 5,
+    "listName": "桃園市中壢區中壢運動公園",
+    "caseTitle": "中壢運動公園 雨水積磚",
+    "content": "此案位於中壢運動公園，係為公共工程案。<br />總計施作<b> 210 m³</b>，上方覆土約45~60cm，為儲水再利用型。",
+    "images": ["zhonglipark-1@taoyuan.png", "zhonglipark-2@taoyuan.png"]
+  },
+  {
+    "type": "儲水型",
+    "id": 6,
+    "listName": "新竹市東區新竹國民小學",
+    "caseTitle": "新竹市東區新竹國民小學 雨水積磚",
+    "content": "此案位於新竹國民小學，係為公共工程案。<br />總計施作<b> 22.5 m³</b>，上方覆土約45~60cm，為儲水再利用型。",
+    "images": ["hsinchuprimaryschool-1@hsinchu.png", "hsinchuprimaryschool-2@hsinchu.png"]
   }
 ]

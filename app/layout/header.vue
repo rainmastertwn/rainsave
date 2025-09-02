@@ -37,7 +37,10 @@ const mobileMenuClick = (dialogType?: string): void => {
     <div class="container flex items-center justify-between py-4 lg:py-6">
       <div class="flex items-center">
         <NuxtLink href="/">
-          <NuxtImg class="h-[50px] w-[50px] lg:h-[65px] lg:w-[65px]" src="/rainsave@logo.svg" />
+          <img
+            class="h-[50px] w-[50px] lg:h-[65px] lg:w-[65px]"
+            src="~/assets/images/rainsave@logo.svg"
+          />
         </NuxtLink>
 
         <div class="ml-2 flex flex-row items-center lg:ml-4">
@@ -47,10 +50,9 @@ const mobileMenuClick = (dialogType?: string): void => {
             </h3>
           </NuxtLink>
 
-          <NuxtImg
+          <img
             class="mb-1 ml-2 hidden w-[25px] cursor-pointer transition-all duration-300 sm:block lg:ml-4 lg:w-[40px]"
-            src="/yuanbao@logo.png"
-            format="webp"
+            src="~/assets/images/yuanbao@logo.png"
           />
         </div>
       </div>

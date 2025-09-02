@@ -26,14 +26,13 @@ const onVideoLoaded = (): void => {
       >
         <VideoIcon class="video-icon" v-if="isVideoPlay === false" @click="playVideo" />
 
-        <NuxtImg
+        <img
           class="w-full"
-          src="index/feature@demo.png"
+          src="~assets/images/index/feature@demo.png"
           alt=""
           v-if="isVideoPlay === false"
           srcset=""
           loading="lazy"
-          format="webp"
         />
 
         <video

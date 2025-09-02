@@ -5,9 +5,9 @@
     <div class="col-span-12 lg:col-span-6 mr-0 mb-8 lg:mb-0 lg:mr-6">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         <div>
-          <NuxtImg
+          <img
             class="w-full"
-            src="detail/notice-1@duancha.png"
+            src="~/assets/images/detail/notice-1@duancha.png"
             alt=""
             srcset=""
             loading="lazy"
@@ -15,9 +15,9 @@
           />
         </div>
         <div>
-          <NuxtImg
+          <img
             class="w-full"
-            src="detail/notice-2@bump.png"
+            src="~/assets/images/detail/notice-2@bump.png"
             alt=""
             srcset=""
             loading="lazy"
@@ -25,9 +25,9 @@
           />
         </div>
         <div>
-          <NuxtImg
+          <img
             class="w-full"
-            src="detail/notice-3@float.png"
+            src="~/assets/images/detail/notice-3@float.png"
             alt=""
             srcset=""
             loading="lazy"
@@ -35,9 +35,9 @@
           />
         </div>
         <div>
-          <NuxtImg
+          <img
             class="w-full"
-            src="detail/notice-4@filler.png"
+            src="~/assets/images/detail/notice-4@filler.png"
             alt=""
             srcset=""
             loading="lazy"
@@ -45,9 +45,9 @@
           />
         </div>
         <div>
-          <NuxtImg
+          <img
             class="w-full"
-            src="detail/notice-5@soft.png"
+            src="~/assets/images/detail/notice-5@soft.png"
             alt=""
             srcset=""
             loading="lazy"
@@ -55,9 +55,9 @@
           />
         </div>
         <div>
-          <NuxtImg
+          <img
             class="w-full"
-            src="detail/notice-6@avoid.png"
+            src="~/assets/images/detail/notice-6@avoid.png"
             alt=""
             srcset=""
             loading="lazy"
@@ -65,9 +65,9 @@
           />
         </div>
         <div>
-          <NuxtImg
+          <img
             class="w-full"
-            src="detail/notice-7@hollow.png"
+            src="~/assets/images/detail/notice-7@hollow.png"
             alt=""
             srcset=""
             loading="lazy"
@@ -75,9 +75,9 @@
           />
         </div>
         <div>
-          <NuxtImg
+          <img
             class="w-full"
-            src="detail/notice-8@range.png"
+            src="~/assets/images/detail/notice-8@range.png"
             alt=""
             srcset=""
             loading="lazy"
@@ -85,9 +85,9 @@
           />
         </div>
         <div>
-          <NuxtImg
+          <img
             class="w-full"
-            src="detail/notice-9@slanted.png"
+            src="~/assets/images/detail/notice-9@slanted.png"
             alt=""
             srcset=""
             loading="lazy"
@@ -99,9 +99,18 @@
     <div class="col-span-12 lg:col-span-6 ml-0 lg:ml-6 flex flex-col justify-center">
       <div>
         <div class="notice-icon mb-6 flex items-center">
-          <NuxtImg class="alarm-icon w-[60px] lg:w-[70px] mr-4" src="detail/notice@icon.png" />
-          <NuxtImg class="alarm-icon w-[60px] lg:w-[70px] mr-4" src="detail/notice@icon.png" />
-          <NuxtImg class="alarm-icon w-[60px] lg:w-[70px]" src="detail/notice@icon.png" />
+          <img
+            class="alarm-icon w-[60px] lg:w-[70px] mr-4"
+            src="~/assets/images/detail/notice@icon.png"
+          />
+          <img
+            class="alarm-icon w-[60px] lg:w-[70px] mr-4"
+            src="~/assets/images/detail/notice@icon.png"
+          />
+          <img
+            class="alarm-icon w-[60px] lg:w-[70px]"
+            src="~/assets/images/detail/notice@icon.png"
+          />
         </div>
         <div class="">
           <h3 class="mb-6 text-3xl font-bold">安裝前注意事項</h3>

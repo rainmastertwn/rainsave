@@ -37,13 +37,12 @@ const onVideoLoaded = () => {
       <h3 class="mb-6 text-center text-2xl font-bold">雨水積磚 施工流程</h3>
       <div class="relative rounded-md border-1 border-gray-400 overflow-hidden">
         <VideoIcon class="video-icon" @click="openVideoDialog('install')" />
-        <NuxtImg
+        <img
           class="w-full"
-          src="index/construction-1@demo.png"
+          src="~/assets/images/index/construction-1@demo.png"
           alt=""
           srcset=""
           loading="lazy"
-          format="webp"
         />
       </div>
     </div>
@@ -51,13 +50,12 @@ const onVideoLoaded = () => {
       <h3 class="mb-6 text-center text-2xl font-bold">儲集框架 施工過程</h3>
       <div class="relative rounded-md border-1 border-gray-400 overflow-hidden">
         <VideoIcon class="video-icon" @click="openVideoDialog('workDemo')" />
-        <NuxtImg
+        <img
           class="w-full"
-          src="index/construction-2@demo.png"
+          src="~/assets/images/index/construction-2@demo.png"
           alt=""
           srcset=""
           loading="lazy"
-          format="webp"
         />
       </div>
     </div>

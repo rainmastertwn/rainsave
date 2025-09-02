@@ -49,9 +49,9 @@ const segmentedOptions = ref<string[]>(['雨水積磚 主體', '雨水積磚 側
           <h2 class="text-3xl font-bold text-center mb-4">雨水積磚 主體大樣圖</h2>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div class="flex flex-col">
-              <NuxtImg
+              <img
                 class="w-full"
-                src="product-typeA@top.png"
+                src="~/assets/images/product-type-a@top.png"
                 alt=""
                 srcset=""
                 loading="lazy"
@@ -60,9 +60,9 @@ const segmentedOptions = ref<string[]>(['雨水積磚 主體', '雨水積磚 側
               <p class="text-xl text-center">上視圖</p>
             </div>
             <div class="flex flex-col">
-              <NuxtImg
+              <img
                 class="w-full"
-                src="product-typeA@side.png"
+                src="~/assets/images/product-type-a@side.png"
                 alt=""
                 srcset=""
                 loading="lazy"
@@ -74,13 +74,12 @@ const segmentedOptions = ref<string[]>(['雨水積磚 主體', '雨水積磚 側
         </div>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 mx-0 lg:mx-4 mb-10 gap-10">
-        <NuxtImg
+        <img
           class="w-full mb-4"
-          src="product-typeBottom.png"
+          src="~/assets/images/product-type-bottom.png"
           alt=""
           srcset=""
           loading="lazy"
-          format="webp"
         />
         <div class="flex flex-col justify-center">
           <h2 class="text-3xl font-bold text-center mb-4">雨水積磚 尺寸詳細資料</h2>
@@ -117,24 +116,22 @@ const segmentedOptions = ref<string[]>(['雨水積磚 主體', '雨水積磚 側
           <h2 class="text-3xl font-bold text-center mb-4">雨水積磚 側板大樣圖</h2>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div class="flex flex-col">
-              <NuxtImg
+              <img
                 class="w-full"
-                src="product-typeB@top.png"
+                src="~/assets/images/product-type-b@top.png"
                 alt=""
                 srcset=""
                 loading="lazy"
-                format="webp"
               />
               <p class="text-xl text-center">上視圖</p>
             </div>
             <div class="flex flex-col">
-              <NuxtImg
+              <img
                 class="w-full"
-                src="product-typeB@side.png"
+                src="~/assets/images/product-type-b@side.png"
                 alt=""
                 srcset=""
                 loading="lazy"
-                format="webp"
               />
               <p class="text-xl text-center">側視圖</p>
             </div>
@@ -142,13 +139,12 @@ const segmentedOptions = ref<string[]>(['雨水積磚 主體', '雨水積磚 側
         </div>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 mx-0 lg:mx-4 mb-10 gap-10">
-        <NuxtImg
+        <img
           class="w-full mb-4"
-          src="product-typeSide.png"
+          src="~/assets/images/product-type-side.png"
           alt=""
           srcset=""
           loading="lazy"
-          format="webp"
         />
         <div class="flex flex-col justify-center">
           <h2 class="text-3xl font-bold text-center mb-4">雨水積磚 尺寸詳細資料</h2>

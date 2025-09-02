@@ -11,11 +11,8 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  modules: ['@nuxt/image', '@element-plus/nuxt'],
+  modules: ['@element-plus/nuxt'],
   css: ['~/assets/css/tailwind.css'],
-  image: {
-    dir: 'assets/images'
-  },
   elementPlus: {
     /** Options setting */
     importStyle: 'scss'

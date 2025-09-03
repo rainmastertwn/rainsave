@@ -45,9 +45,7 @@ const mobileMenuClick = (dialogType?: string): void => {
 
         <div class="ml-2 flex flex-row items-center lg:ml-4">
           <NuxtLink href="/">
-            <h3 class="text-xl font-semibold uppercase lg:text-3xl xl:text-4xl">
-              Rain Save 儲集框架
-            </h3>
+            <h3 class="text-xl font-bold uppercase lg:text-3xl xl:text-4xl">Rain Save 儲集框架</h3>
           </NuxtLink>
 
           <img

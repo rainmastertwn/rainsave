@@ -1,14 +1,23 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+type TitleProps = {
+  title?: string
+  description?: string
+}
+
+const props = withDefaults(defineProps<TitleProps>(), {
+  title: 'Rain SAVE 雨水積磚',
+  description: '基地保水 · 流出抑制 · 台灣製造 · 品質保證'
+})
+</script>
 
 <template>
   <section class="container mt-10 mb-16 grid grid-cols-12">
     <div class="bg-primary col-span-12 col-start-1 px-8 py-8 text-white lg:px-20">
-      <h1 class="mb-4 text-2xl font-semibold lg:text-4xl">Rain SAVE 雨水積磚</h1>
+      <h1 class="mb-4 text-2xl font-bold lg:text-4xl">{{ props.title }}</h1>
       <div class="cross-arrow mb-4 flex"></div>
       <div class="flex items-center" data-aos="fade-up" data-aos-delay="200">
-        <!-- <h2 class="typewriter min-w-[320px] text-4xl font-semibold"></h2> -->
-        <h2 class="text-2xl font-semibold lg:text-4xl">
-          基地保水&nbsp·&nbsp流出抑制&nbsp·&nbsp台灣製造&nbsp·&nbsp品質保證
+        <h2 class="text-2xl font-bold lg:text-4xl">
+          {{ props.description }}
         </h2>
       </div>
     </div>
